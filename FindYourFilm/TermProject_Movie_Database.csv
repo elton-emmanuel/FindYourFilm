@@ -1,0 +1,661 @@
+Date,Movie ,Location,Showtime,Type,Age Rating
+18-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,12:30 PM,VIP 19+,PG
+18-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,3:30 PM,VIP 19+,PG
+18-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,6:45 PM,VIP 19+,PG
+18-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,10:00 PM,VIP 19+,PG
+18-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,1:35 PM,IMAX,PG
+18-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,4:30 PM,IMAX,PG
+18-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,7:25 PM,IMAX,PG
+18-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,10:20 PM,IMAX,PG
+18-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,1:30 PM,VIP 19+,14A
+18-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,5:15 PM,VIP 19+,14A
+18-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,9:30 PM,VIP 19+,14A
+18-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,11:00 PM,VIP 19+,PG
+18-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,2:30 PM,VIP 19+,PG
+18-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,6:15 PM,VIP 19+,PG
+18-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,10:20 PM,VIP 19+,PG
+18-Nov-19,Joker,Cineplex Yonge-Dundas,2:00 PM,VIP 19+,14A
+18-Nov-19,Joker,Cineplex Yonge-Dundas,5:45 PM,VIP 19+,14A
+18-Nov-19,Joker,Cineplex Yonge-Dundas,1:20 PM,Ultra AVX,14A
+18-Nov-19,Joker,Cineplex Yonge-Dundas,4:30 PM,Ultra AVX,14A
+18-Nov-19,Joker,Cineplex Yonge-Dundas,7:50 PM,Ultra AVX,14A
+18-Nov-19,Joker,Cineplex Yonge-Dundas,10:40 PM,Ultra AVX,14A
+18-Nov-19,Last Christmas,Cineplex Yonge-Dundas,1:00 PM,VIP 19+,PG
+18-Nov-19,Last Christmas,Cineplex Yonge-Dundas,4:00 PM,VIP 19+,PG
+18-Nov-19,Last Christmas,Cineplex Yonge-Dundas,9:00 PM,VIP 19+,PG
+18-Nov-19,Last Christmas,Cineplex Yonge-Dundas,10:40 PM,VIP 19+,PG
+18-Nov-19,Last Christmas,Cineplex Yonge-Dundas,2:00 PM,Regular ,PG
+18-Nov-19,Last Christmas,Cineplex Yonge-Dundas,4:40 PM,Regular ,PG
+18-Nov-19,Last Christmas,Cineplex Yonge-Dundas,7:20 PM,Regular ,PG
+18-Nov-19,Last Christmas,Cineplex Yonge-Dundas,10:00 PM,Regular ,PG
+18-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,7:40 PM,Regular 3D,PG
+18-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,10:30 PM,Regular 3D,PG
+18-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,1:50 PM,Regular,PG
+18-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,4:40 PM,Regular,PG
+18-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,3:40 PM,Regular,PG
+18-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,7:00 PM,Regular,PG
+18-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,10:20 PM,Regular,PG
+18-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,3:30 PM,Regular,PG
+18-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,7:00 PM,Regular,PG
+18-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,10:00 PM,Regular,PG
+18-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,10:30 PM,Regular,PG
+18-Nov-19,Black And Blue,Cineplex Yonge-Dundas,9:50 PM,Regular,14A
+18-Nov-19,Harriet,Cineplex Yonge-Dundas,10:40 PM,Regular,PG
+18-Nov-19,Hustlers,Cineplex Yonge-Dundas,6:50 PM,Regular,14A
+18-Nov-19,Hustlers,Cineplex Yonge-Dundas,10:15 PM,Regular,14A
+18-Nov-19,IT Chapter Two,Cineplex Yonge-Dundas,9:00 PM,Regular,14A
+18-Nov-19,KONOSUBA - God's blessing on this wonderful! - Legend of Crimson (Japanese w/e.s.t),Cineplex Yonge-Dundas,2:10 PM,Regular,PG
+18-Nov-19,KONOSUBA - God's blessing on this wonderful! - Legend of Crimson (Japanese w/e.s.t),Cineplex Yonge-Dundas,4:40 PM,Regular,PG
+18-Nov-19,KONOSUBA - God's blessing on this wonderful! - Legend of Crimson (Japanese w/e.s.t),Cineplex Yonge-Dundas,7:00 PM,Regular,PG
+18-Nov-19,KONOSUBA - God's blessing on this wonderful! - Legend of Crimson (Japanese w/e.s.t),Cineplex Yonge-Dundas,7:10 PM,Regular,PG
+18-Nov-19,KONOSUBA - God's blessing on this wonderful! - Legend of Crimson (Japanese w/e.s.t),Cineplex Yonge-Dundas,9:30 PM,Regular,PG
+18-Nov-19,Motherless Brooklyn,Cineplex Yonge-Dundas,7:10 PM,Regular,14A
+18-Nov-19,Motherless Brooklyn,Cineplex Yonge-Dundas,10:30 PM,Regular,14A
+18-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,2:20 PM,Regular,G
+18-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,4:50 PM,Regular,G
+18-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,7:20 PM,Regular,G
+18-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,9:40 PM,Regular,G
+18-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,3:40 PM,Regular,PG
+18-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,7:40 PM,Regular,PG
+18-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,9:40 PM,Regular,PG
+18-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,3:30 PM,Regular ,14A
+18-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,6:30 PM,Regular ,14A
+18-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,9:30 PM,Regular ,14A
+18-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,1:00 PM,4DX,14A
+18-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,4:00 PM,4DX,14A
+18-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,7:10 PM,4DX,14A
+18-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,10:10 PM,4DX,14A
+18-Nov-19,The Addams Family,Cineplex Yonge-Dundas,7:10 PM,Regular,PG
+18-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,2:30 PM,Regular,PG
+18-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,5:00 PM,Regular,PG
+18-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,7:30 PM,Regular,PG
+18-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,10:10 PM,Regular,PG
+18-Nov-19,Alien,Cineplex Yonge-Dundas,7:00 PM,VIP 19+,R
+18-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,1:40 PM,D-Box AVX,14A
+18-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,4:40 PM,D-Box AVX,14A
+18-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,7:40 PM,D-Box AVX,14A
+18-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,10:40 PM,D-Box AVX,14A
+18-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,1:40 PM,Ultra AVX,14A
+18-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,4:40 PM,Ultra AVX,14A
+18-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,7:40 PM,Ultra AVX,14A
+18-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,10:40 PM,Ultra AVX,14A
+18-Nov-19,Charlie's Angels,Scotiabank Theatre,12:50 PM,Regular,PG
+18-Nov-19,Charlie's Angels,Scotiabank Theatre,1:35 PM,Regular,PG
+18-Nov-19,Charlie's Angels,Scotiabank Theatre,3:45 PM,Regular,PG
+18-Nov-19,Charlie's Angels,Scotiabank Theatre,4:30 PM,Regular,PG
+18-Nov-19,Charlie's Angels,Scotiabank Theatre,6:40 PM,Regular,PG
+18-Nov-19,Charlie's Angels,Scotiabank Theatre,7:25 PM,Regular,PG
+18-Nov-19,Charlie's Angels,Scotiabank Theatre,9:35 PM,Regular,PG
+18-Nov-19,Charlie's Angels,Scotiabank Theatre,10:20 PM,Regular,PG
+18-Nov-19,Doctor Sleep,Scotiabank Theatre,12:30 PM,Regular,14A
+18-Nov-19,Doctor Sleep,Scotiabank Theatre,2:50 PM,Regular,14A
+18-Nov-19,Doctor Sleep,Scotiabank Theatre,3:45 PM,Regular,14A
+18-Nov-19,Doctor Sleep,Scotiabank Theatre,6:15 PM,Regular,14A
+18-Nov-19,Doctor Sleep,Scotiabank Theatre,7:00 PM,Regular,14A
+18-Nov-19,Doctor Sleep,Scotiabank Theatre,9:30 PM,Regular,14A
+18-Nov-19,Doctor Sleep,Scotiabank Theatre,10:15 PM,Regular,14A
+18-Nov-19,Ford v. Ferrari,Scotiabank Theatre,12:20 PM,IMAX,PG
+18-Nov-19,Ford v. Ferrari,Scotiabank Theatre,3:40 PM,IMAX,PG
+18-Nov-19,Ford v. Ferrari,Scotiabank Theatre,7:05 PM,IMAX,PG
+18-Nov-19,Ford v. Ferrari,Scotiabank Theatre,10:30 PM,IMAX,PG
+18-Nov-19,Jojo Rabbit,Scotiabank Theatre,12:25 PM,Regular,PG
+18-Nov-19,Jojo Rabbit,Scotiabank Theatre,3:00 PM,Regular,PG
+18-Nov-19,Jojo Rabbit,Scotiabank Theatre,5:45 PM,Regular,PG
+18-Nov-19,Jojo Rabbit,Scotiabank Theatre,8:30 PM,Regular,PG
+18-Nov-19,Joker,Scotiabank Theatre,1:50 PM,Regular,14A
+18-Nov-19,Joker,Scotiabank Theatre,4:45 PM,Regular,14A
+18-Nov-19,Joker,Scotiabank Theatre,7:45 PM,Regular,14A
+18-Nov-19,Joker,Scotiabank Theatre,10:40 PM,Regular,14A
+18-Nov-19,Midway,Scotiabank Theatre,12:25 PM,Regular,PG
+18-Nov-19,Midway,Scotiabank Theatre,3:30 PM,Regular,PG
+18-Nov-19,Midway,Scotiabank Theatre,6:40 PM,Regular,PG
+18-Nov-19,Midway,Scotiabank Theatre,9:50 PM,Regular,PG
+18-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,12:45 PM,Regular,14A
+18-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,4:00 PM,Regular,14A
+18-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,7:20 PM,Regular,14A
+18-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,10:35 PM,Regular,14A
+18-Nov-19,The Good Liar,Scotiabank Theatre,12:20 PM,Regular,14A
+18-Nov-19,The Good Liar,Scotiabank Theatre,1:20 PM,Regular,14A
+18-Nov-19,The Good Liar,Scotiabank Theatre,4:05 PM,Regular,14A
+18-Nov-19,The Good Liar,Scotiabank Theatre,6:50 PM,Regular,14A
+18-Nov-19,The Good Liar,Scotiabank Theatre,9:35 PM,Regular,14A
+18-Nov-19,The Lighthouse,Scotiabank Theatre,2:00 PM,Regular,14A
+18-Nov-19,The Lighthouse,Scotiabank Theatre,4:45 PM,Regular,14A
+18-Nov-19,The Lighthouse,Scotiabank Theatre,7:30 PM,Regular,14A
+18-Nov-19,The Lighthouse,Scotiabank Theatre,10:15 PM,Regular,14A
+18-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,1:00 PM,Regular,18A
+18-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,3:20 PM,Regular,18A
+18-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,10:40 PM,Regular,18A
+18-Nov-19,Midway,Carlton Cinema,3:40 PM,Regular,PG
+18-Nov-19,Last Christmas,Carlton Cinema,4:00 PM,Regular,PG
+18-Nov-19,Last Christmas,Carlton Cinema,7:00 PM,Regular,PG
+18-Nov-19,Judy,Carlton Cinema,4:05 PM,Regular,PG
+18-Nov-19,Judy,Carlton Cinema,7:05 PM,Regular,PG
+18-Nov-19,Doctor Sleep,Carlton Cinema,3:30 PM,Regular,14A
+18-Nov-19,Doctor Sleep,Carlton Cinema,6:30 PM,Regular,14A
+18-Nov-19,Charlie's Angels,Carlton Cinema,3:55 PM,Regular,PG
+18-Nov-19,Charlie's Angels,Carlton Cinema,6:55 PM,Regular,PG
+18-Nov-19,Harriet,Carlton Cinema,3:45 PM,Regular,PG
+18-Nov-19,Harriet,Carlton Cinema,6:45 PM,Regular,PG
+18-Nov-19,Terminator: Dark Fate,Carlton Cinema,3:50 PM,Regular,14A
+18-Nov-19,Terminator: Dark Fate,Carlton Cinema,6:50 PM,Regular,14A
+18-Nov-19,Playing With Fire,Carlton Cinema,7:10 PM,Regular,G
+18-Nov-19,Motherless Brooklyn,Carlton Cinema,3:35 PM,Regular,14A
+18-Nov-19,Motherless Brooklyn,Carlton Cinema,6:35 PM,Regular,14A
+18-Nov-19,The Incredible 25th Year of Mitzi Bearclaw,Carlton Cinema,4:10 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,12:30 PM,VIP 19+,PG
+19-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,3:30 PM,VIP 19+,PG
+19-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,6:45 PM,VIP 19+,PG
+19-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,10:00 PM,VIP 19+,PG
+19-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,1:35 PM,IMAX,PG
+19-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,4:30 PM,IMAX,PG
+19-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,7:25 PM,IMAX,PG
+19-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,10:20 PM,IMAX,PG
+19-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,11:00 AM,VIP 19+,14A
+19-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,2:30 PM,VIP 19+,14A
+19-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,6:00 PM,VIP 19+,14A
+19-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,9:30 PM,VIP 19+,14A
+19-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,11:30 AM,VIP 19+,PG
+19-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,3:00 PM,VIP 19+,PG
+19-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,7:15 PM,VIP 19+,PG
+19-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,11:00 PM,VIP 19+,PG
+19-Nov-19,Joker,Cineplex Yonge-Dundas,2:00 PM,VIP 19+,14A
+19-Nov-19,Joker,Cineplex Yonge-Dundas,5:30 PM,VIP 19+,14A
+19-Nov-19,Joker,Cineplex Yonge-Dundas,9:00 PM,VIP 19+,14A
+19-Nov-19,Joker,Cineplex Yonge-Dundas,1:20 PM,Ultra AVX,14A
+19-Nov-19,Joker,Cineplex Yonge-Dundas,4:30 PM,Ultra AVX,14A
+19-Nov-19,Joker,Cineplex Yonge-Dundas,7:50 PM,Ultra AVX,14A
+19-Nov-19,Joker,Cineplex Yonge-Dundas,10:40 PM,Ultra AVX,14A
+19-Nov-19,Last Christmas,Cineplex Yonge-Dundas,1:00 PM,VIP 19+,PG
+19-Nov-19,Last Christmas,Cineplex Yonge-Dundas,4:00 PM,VIP 19+,PG
+19-Nov-19,Last Christmas,Cineplex Yonge-Dundas,7:45 PM,VIP 19+,PG
+19-Nov-19,Last Christmas,Cineplex Yonge-Dundas,10:30 PM,VIP 19+,PG
+19-Nov-19,Last Christmas,Cineplex Yonge-Dundas,2:00 PM,VIP 19+,PG
+19-Nov-19,Last Christmas,Cineplex Yonge-Dundas,4:40 PM,VIP 19+,PG
+19-Nov-19,Last Christmas,Cineplex Yonge-Dundas,7:20 PM,VIP 19+,PG
+19-Nov-19,Last Christmas,Cineplex Yonge-Dundas,10:00 PM,VIP 19+,PG
+19-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,7:40 PM,Regular 3D,PG
+19-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,10:30 PM,Regular 3D,PG
+19-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,1:50 PM,Regular,PG
+19-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,4:40 PM,Regular,PG
+19-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,3:40 PM,Regular,PG
+19-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,7:00 PM,Regular,PG
+19-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,10:20 PM,Regular,PG
+19-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,3:30 PM,Regular,PG
+19-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,6:30 PM,Regular,PG
+19-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,7:00 PM,Regular,PG
+19-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,9:30 PM,Regular,PG
+19-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,10:00 PM,Regular,PG
+19-Nov-19,Black and Blue,Cineplex Yonge-Dundas,9:50 PM,Regular,14A
+19-Nov-19,Die Hard 2 - Flashback Film Series,Cineplex Yonge-Dundas,2:40 PM,Regular,R
+19-Nov-19,Harriet,Cineplex Yonge-Dundas,6:50 PM,Regular,PG
+19-Nov-19,Harriet,Cineplex Yonge-Dundas,9:40 PM,Regular,PG
+19-Nov-19,Hustlers,Cineplex Yonge-Dundas,6:50 PM,Regular,14A
+19-Nov-19,Hustlers,Cineplex Yonge-Dundas,10:15 PM,Regular,14A
+19-Nov-19,IT Chapter Two,Cineplex Yonge-Dundas,9:00 PM,Regular,14A
+19-Nov-19,Motherless Brooklyn,Cineplex Yonge-Dundas,7:10 PM,Regular,14A
+19-Nov-19,Motherless Brooklyn,Cineplex Yonge-Dundas,10:30 PM,Regular,14A
+19-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,2:20 PM,Regular,G
+19-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,4:50 PM,Regular,G
+19-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,7:20 PM,Regular,G
+19-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,9:40 PM,Regular,G
+19-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,2:00 PM,Regular,PG
+19-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,4:50 PM,Regular,PG
+19-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,7:40 PM,Regular,PG
+19-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,10:30 PM,Regular,PG
+19-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,3:30 PM,Regular,14A
+19-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,6:30 PM,Regular,14A
+19-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,9:30 PM,Regular,14A
+19-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,1:00 PM,4DX,14A
+19-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,4:00 PM,4DX,14A
+19-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,7:10 PM,4DX,14A
+19-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,10:10 PM,4DX,14A
+19-Nov-19,The Addams Family,Cineplex Yonge-Dundas,7:10 PM,Regular,PG
+19-Nov-19,The Godfather: Part II - Classic Films,Cineplex Yonge-Dundas,6:30 PM,Regular,14A
+19-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,2:30 PM,Regular,PG
+19-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,5:00 PM,Regular,PG
+19-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,7:30 PM,Regular,PG
+19-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,10:10 PM,Regular,PG
+19-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,1:40 PM,D-Box AVX,14A
+19-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,4:40 PM,D-Box AVX,14A
+19-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,7:40 PM,D-Box AVX,14A
+19-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,10:40 PM,D-Box AVX,14A
+19-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,1:40 PM,Ultra AVX,14A
+19-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,4:40 PM,Ultra AVX,14A
+19-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,7:40 PM,Ultra AVX,14A
+19-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,10:40 PM,Ultra AVX,14A
+19-Nov-19,Charlie's Angels,Scotiabank Theatre,12:50 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Scotiabank Theatre,1:35 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Scotiabank Theatre,3:45 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Scotiabank Theatre,4:30 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Scotiabank Theatre,6:40 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Scotiabank Theatre,7:25 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Scotiabank Theatre,9:35 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Scotiabank Theatre,10:20 PM,Regular,PG
+19-Nov-19,Doctor Sleep,Scotiabank Theatre,12:30 PM,Regular,14A
+19-Nov-19,Doctor Sleep,Scotiabank Theatre,2:50 PM,Regular,14A
+19-Nov-19,Doctor Sleep,Scotiabank Theatre,3:45 PM,Regular,14A
+19-Nov-19,Doctor Sleep,Scotiabank Theatre,6:15 PM,Regular,14A
+19-Nov-19,Doctor Sleep,Scotiabank Theatre,7:00 PM,Regular,14A
+19-Nov-19,Doctor Sleep,Scotiabank Theatre,9:30 PM,Regular,14A
+19-Nov-19,Doctor Sleep,Scotiabank Theatre,10:15 PM,Regular,14A
+19-Nov-19,Ford v. Ferrari,Scotiabank Theatre,12:20 PM,IMAX,PG
+19-Nov-19,Ford v. Ferrari,Scotiabank Theatre,3:40 PM,IMAX,PG
+19-Nov-19,Ford v. Ferrari,Scotiabank Theatre,7:05 PM,IMAX,PG
+19-Nov-19,Ford v. Ferrari,Scotiabank Theatre,10:30 PM,IMAX,PG
+19-Nov-19,Ford v. Ferrari,Scotiabank Theatre,3:00 PM,Regular,PG
+19-Nov-19,Ford v. Ferrari,Scotiabank Theatre,6:30 PM,Regular,PG
+19-Nov-19,Ford v. Ferrari,Scotiabank Theatre,10:00 PM,Regular,PG
+19-Nov-19,Jojo Rabbit,Scotiabank Theatre,12:25 PM,Regular,PG
+19-Nov-19,Jojo Rabbit,Scotiabank Theatre,3:00 PM,Regular,PG
+19-Nov-19,Jojo Rabbit,Scotiabank Theatre,5:45 PM,Regular,PG
+19-Nov-19,Jojo Rabbit,Scotiabank Theatre,8:30 PM,Regular,PG
+19-Nov-19,Joker,Scotiabank Theatre,1:50 PM,Regular,14A
+19-Nov-19,Joker,Scotiabank Theatre,4:45 PM,Regular,14A
+19-Nov-19,Joker,Scotiabank Theatre,7:45 PM,Regular,14A
+19-Nov-19,Joker,Scotiabank Theatre,10:40 PM,Regular,14A
+19-Nov-19,Midway,Scotiabank Theatre,12:25 PM,Regular,PG
+19-Nov-19,Midway,Scotiabank Theatre,3:30 PM,Regular,PG
+19-Nov-19,Midway,Scotiabank Theatre,6:40 PM,Regular,PG
+19-Nov-19,Midway,Scotiabank Theatre,9:50 PM,Regular,PG
+19-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,12:45 PM,Regular,14A
+19-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,4:00 PM,Regular,14A
+19-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,7:20 PM,Regular,14A
+19-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,10:35 PM,Regular,14A
+19-Nov-19,The Good Liar,Scotiabank Theatre,12:20 PM,Regular,14A
+19-Nov-19,The Good Liar,Scotiabank Theatre,1:20 PM,Regular,14A
+19-Nov-19,The Good Liar,Scotiabank Theatre,4:05 PM,Regular,14A
+19-Nov-19,The Good Liar,Scotiabank Theatre,6:50 PM,Regular,14A
+19-Nov-19,The Good Liar,Scotiabank Theatre,9:35 PM,Regular,14A
+19-Nov-19,The Lighthouse,Scotiabank Theatre,2:00 PM,Regular,14A
+19-Nov-19,The Lighthouse,Scotiabank Theatre,4:45 PM,Regular,14A
+19-Nov-19,The Lighthouse,Scotiabank Theatre,7:30 PM,Regular,14A
+19-Nov-19,The Lighthouse,Scotiabank Theatre,10:15 PM,Regular,14A
+19-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,1:00 PM,Regular,18A
+19-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,3:20 PM,Regular,18A
+19-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,5:40 PM,Regular,18A
+19-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,8:00 PM,Regular,18A
+19-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,10:40 PM,Regular,18A
+19-Nov-19,Midway,Carlton Cinema,12:40 PM,Regular,PG
+19-Nov-19,Midway,Carlton Cinema,3:40 PM,Regular,PG
+19-Nov-19,Midway,Carlton Cinema,6:40 PM,Regular,PG
+19-Nov-19,Midway,Carlton Cinema,9:40 PM,Regular,PG
+19-Nov-19,Last Christmas,Carlton Cinema,1:00 PM,Regular,PG
+19-Nov-19,Last Christmas,Carlton Cinema,4:00 PM,Regular,PG
+19-Nov-19,Last Christmas,Carlton Cinema,7:00 PM,Regular,PG
+19-Nov-19,Last Christmas,Carlton Cinema,9:45 PM,Regular,PG
+19-Nov-19,Judy,Carlton Cinema,1:05 PM,Regular,PG
+19-Nov-19,Judy,Carlton Cinema,4:05 PM,Regular,PG
+19-Nov-19,Judy,Carlton Cinema,7:05 PM,Regular,PG
+19-Nov-19,Judy,Carlton Cinema,9:55 PM,Regular,PG
+19-Nov-19,Doctor Sleep,Carlton Cinema,12:30 PM,Regular,14A
+19-Nov-19,Doctor Sleep,Carlton Cinema,3:30 PM,Regular,14A
+19-Nov-19,Doctor Sleep,Carlton Cinema,6:30 PM,Regular,14A
+19-Nov-19,Doctor Sleep,Carlton Cinema,9:25 PM,Regular,14A
+19-Nov-19,Charlie's Angels,Carlton Cinema,12:55 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Carlton Cinema,3:55 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Carlton Cinema,6:55 PM,Regular,PG
+19-Nov-19,Charlie's Angels,Carlton Cinema,9:45 PM,Regular,PG
+19-Nov-19,Harriet,Carlton Cinema,12:45 PM,Regular,PG
+19-Nov-19,Harriet,Carlton Cinema,3:45 PM,Regular,PG
+19-Nov-19,Harriet,Carlton Cinema,6:45 PM,Regular,PG
+19-Nov-19,Harriet,Carlton Cinema,9:40 PM,Regular,PG
+19-Nov-19,Terminator: Dark Fate,Carlton Cinema,12:50 PM,Regular,14A
+19-Nov-19,Terminator: Dark Fate,Carlton Cinema,3:50 PM,Regular,14A
+19-Nov-19,Terminator: Dark Fate,Carlton Cinema,6:50 PM,Regular,14A
+19-Nov-19,Terminator: Dark Fate,Carlton Cinema,9:35 PM,Regular,14A
+19-Nov-19,Playing With Fire,Carlton Cinema,1:10 PM,Regular,G
+19-Nov-19,Playing With Fire,Carlton Cinema,7:10 PM,Regular,G
+19-Nov-19,Motherless Brooklyn,Carlton Cinema,12:35 PM,Regular,14A
+19-Nov-19,Motherless Brooklyn,Carlton Cinema,3:35 PM,Regular,14A
+19-Nov-19,Motherless Brooklyn,Carlton Cinema,6:35 PM,Regular,14A
+19-Nov-19,Motherless Brooklyn,Carlton Cinema,9:35 PM,Regular,14A
+19-Nov-19,The Incredible 25th Year of Mitzi Bearclaw,Carlton Cinema,4:10 PM,Regular,PG
+19-Nov-19,The Incredible 25th Year of Mitzi Bearclaw,Carlton Cinema,9:30 PM,Regular,PG
+20-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,11:30 AM,VIP 19+,PG
+20-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,2:30 PM,VIP 19+,PG
+20-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,6:00 PM,VIP 19+,PG
+20-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,9:30 PM,VIP 19+,PG
+20-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,1:35 PM,IMAX,PG
+20-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,4:30 PM,IMAX,PG
+20-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,7:25 PM,IMAX,PG
+20-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,10:20 PM,IMAX,PG
+20-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,12:30 PM,VIP 19+,14A
+20-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,4:30 PM,VIP 19+,14A
+20-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,8:30 PM,VIP 19+,14A
+20-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,1:00 PM,VIP 19+,PG
+20-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,5:00 PM,VIP 19+,PG
+20-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,9:00 PM,VIP 19+,PG
+20-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,11:00 AM,VIP 19+,PG
+20-Nov-19,Joker,Cineplex Yonge-Dundas,3:00 PM,VIP 19+,14A
+20-Nov-19,Joker,Cineplex Yonge-Dundas,6:30 PM,VIP 19+,14A
+20-Nov-19,Joker,Cineplex Yonge-Dundas,10:30 PM,VIP 19+,14A
+20-Nov-19,Joker,Cineplex Yonge-Dundas,1:20 PM,Ultra AVX,14A
+20-Nov-19,Joker,Cineplex Yonge-Dundas,4:30 PM,Ultra AVX,14A
+20-Nov-19,Joker,Cineplex Yonge-Dundas,7:50 PM,Ultra AVX,14A
+20-Nov-19,Joker,Cineplex Yonge-Dundas,10:40 PM,Ultra AVX,14A
+20-Nov-19,Last Christmas,Cineplex Yonge-Dundas,12:00 PM,VIP 19+,PG
+20-Nov-19,Last Christmas,Cineplex Yonge-Dundas,4:00 PM,VIP 19+,PG
+20-Nov-19,Last Christmas,Cineplex Yonge-Dundas,7:00 PM,VIP 19+,PG
+20-Nov-19,Last Christmas,Cineplex Yonge-Dundas,10:00 PM,VIP 19+,PG
+20-Nov-19,Last Christmas,Cineplex Yonge-Dundas,2:00 PM,Regular,PG
+20-Nov-19,Last Christmas,Cineplex Yonge-Dundas,4:40 PM,Regular,PG
+20-Nov-19,Last Christmas,Cineplex Yonge-Dundas,7:20 PM,Regular,PG
+20-Nov-19,Last Christmas,Cineplex Yonge-Dundas,10:00 PM,Regular,PG
+20-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,7:40 PM,Regular 3D,PG
+20-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,10:30 PM,Regular 3D,PG
+20-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,1:50 PM,Regular,PG
+20-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,4:40 PM,Regular,PG
+20-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,3:40 PM,Regular,PG
+20-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,7:00 PM,Regular,PG
+20-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,10:20 PM,Regular,PG
+20-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,3:30 PM,Regular,PG
+20-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,7:00 PM,Regular,PG
+20-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,10:00 PM,Regular,PG
+20-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,10:40 PM,Regular,PG
+20-Nov-19,Billy Connolly - The Sex Life of Bandages,Cineplex Yonge-Dundas,3:10 PM,Regular,R
+20-Nov-19,Black and Blue,Cineplex Yonge-Dundas,9:50 PM,Regular,14A
+20-Nov-19,Harriet,Cineplex Yonge-Dundas,7:50 PM,Regular,PG
+20-Nov-19,Harriet,Cineplex Yonge-Dundas,10:40 PM,Regular,PG
+20-Nov-19,Hustlers,Cineplex Yonge-Dundas,6:50 PM,Regular,14A
+20-Nov-19,Hustlers,Cineplex Yonge-Dundas,10:15 PM,Regular,14A
+20-Nov-19,IT Chapter Two,Cineplex Yonge-Dundas,10:00 PM,Regular,14A
+20-Nov-19,Motherless Brooklyn,Cineplex Yonge-Dundas,7:10 PM,Regular,14A
+20-Nov-19,Motherless Brooklyn,Cineplex Yonge-Dundas,10:30 PM,Regular,14A
+20-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,2:20 PM,Regular,G
+20-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,4:50 PM,Regular,G
+20-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,7:20 PM,Regular,G
+20-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,9:40 PM,Regular,G
+20-Nov-19,Princess Mononoke (Japanese w/e.s.t) - Studio Ghibli Fest,Cineplex Yonge-Dundas,7:00 PM,Regular,14A
+20-Nov-19,Princess Mononoke (Japanese w/e.s.t) - Studio Ghibli Fest,Cineplex Yonge-Dundas,10:10 PM,Regular,14A
+20-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,2:00 PM,Regular,PG
+20-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,4:50 PM,Regular,PG
+20-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,7:40 PM,Regular,PG
+20-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,10:30 PM,Regular,PG
+20-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,3:30 PM,Regular,14A
+20-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,6:30 PM,Regular,14A
+20-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,9:30 PM,Regular,14A
+20-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,1:00 PM,4DX,14A
+20-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,4:00 PM,4DX,14A
+20-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,7:10 PM,4DX,14A
+20-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,10:10 PM,4DX,14A
+20-Nov-19,The Addams Family,Cineplex Yonge-Dundas,7:10 PM,Regular,PG
+20-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,2:30 PM,Regular,PG
+20-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,5:00 PM,Regular,PG
+20-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,7:30 PM,Regular,PG
+20-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,10:10 PM,Regular,PG
+20-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,1:30 PM,D-Box AVX,14A
+20-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,10:40 PM,D-Box AVX,14A
+20-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,1:30 PM,Ultra AVX,14A
+20-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,10:40 PM,Ultra AVX,14A
+20-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,7:30 PM,Regular,14A
+20-Nov-19,Charlie's Angels,Scotiabank Theatre,12:50 PM,Regular,PG
+20-Nov-19,Charlie's Angels,Scotiabank Theatre,1:35 PM,Regular,PG
+20-Nov-19,Charlie's Angels,Scotiabank Theatre,3:45 PM,Regular,PG
+20-Nov-19,Charlie's Angels,Scotiabank Theatre,4:30 PM,Regular,PG
+20-Nov-19,Charlie's Angels,Scotiabank Theatre,6:40 PM,Regular,PG
+20-Nov-19,Charlie's Angels,Scotiabank Theatre,7:25 PM,Regular,PG
+20-Nov-19,Charlie's Angels,Scotiabank Theatre,9:35 PM,Regular,PG
+20-Nov-19,Charlie's Angels,Scotiabank Theatre,10:20 PM,Regular,PG
+20-Nov-19,Doctor Sleep,Scotiabank Theatre,12:30 PM,Regular,14A
+20-Nov-19,Doctor Sleep,Scotiabank Theatre,2:50 PM,Regular,14A
+20-Nov-19,Doctor Sleep,Scotiabank Theatre,3:45 PM,Regular,14A
+20-Nov-19,Doctor Sleep,Scotiabank Theatre,6:15 PM,Regular,14A
+20-Nov-19,Doctor Sleep,Scotiabank Theatre,7:00 PM,Regular,14A
+20-Nov-19,Doctor Sleep,Scotiabank Theatre,9:30 PM,Regular,14A
+20-Nov-19,Doctor Sleep,Scotiabank Theatre,10:15 PM,Regular,14A
+20-Nov-19,Ford v. Ferrari,Scotiabank Theatre,12:20 PM,IMAX,PG
+20-Nov-19,Ford v. Ferrari,Scotiabank Theatre,3:40 PM,IMAX,PG
+20-Nov-19,Ford v. Ferrari,Scotiabank Theatre,7:05 PM,IMAX,PG
+20-Nov-19,Ford v. Ferrari,Scotiabank Theatre,10:30 PM,IMAX,PG
+20-Nov-19,Ford v. Ferrari,Scotiabank Theatre,3:00 PM,Regular,PG
+20-Nov-19,Ford v. Ferrari,Scotiabank Theatre,6:30 PM,Regular,PG
+20-Nov-19,Ford v. Ferrari,Scotiabank Theatre,10:00 PM,Regular,PG
+20-Nov-19,Jojo Rabbit,Scotiabank Theatre,12:25 PM,Regular,PG
+20-Nov-19,Jojo Rabbit,Scotiabank Theatre,3:00 PM,Regular,PG
+20-Nov-19,Jojo Rabbit,Scotiabank Theatre,5:45 PM,Regular,PG
+20-Nov-19,Jojo Rabbit,Scotiabank Theatre,8:30 PM,Regular,PG
+20-Nov-19,Joker,Scotiabank Theatre,1:50 PM,Regular,14A
+20-Nov-19,Joker,Scotiabank Theatre,4:45 PM,Regular,14A
+20-Nov-19,Joker,Scotiabank Theatre,7:45 PM,Regular,14A
+20-Nov-19,Joker,Scotiabank Theatre,10:40 PM,Regular,14A
+20-Nov-19,Midway,Scotiabank Theatre,12:25 PM,Regular,PG
+20-Nov-19,Midway,Scotiabank Theatre,3:30 PM,Regular,PG
+20-Nov-19,Midway,Scotiabank Theatre,6:40 PM,Regular,PG
+20-Nov-19,Midway,Scotiabank Theatre,9:50 PM,Regular,PG
+20-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,12:45 PM,Regular,14A
+20-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,4:00 PM,Regular,14A
+20-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,7:20 PM,Regular,14A
+20-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,10:35 PM,Regular,14A
+20-Nov-19,The Good Liar,Scotiabank Theatre,12:20 PM,Regular,14A
+20-Nov-19,The Good Liar,Scotiabank Theatre,1:20 PM,Regular,14A
+20-Nov-19,The Good Liar,Scotiabank Theatre,4:05 PM,Regular,14A
+20-Nov-19,The Good Liar,Scotiabank Theatre,6:50 PM,Regular,14A
+20-Nov-19,The Good Liar,Scotiabank Theatre,9:35 PM,Regular,14A
+20-Nov-19,The Lighthouse,Scotiabank Theatre,12:50 PM,Regular,14A
+20-Nov-19,The Lighthouse,Scotiabank Theatre,3:35 PM,Regular,14A
+20-Nov-19,The Lighthouse,Scotiabank Theatre,10:20 PM,Regular,14A
+20-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,1:00 PM,Regular,18A
+20-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,3:20 PM,Regular,18A
+20-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,10:40 PM,Regular,18A
+20-Nov-19,Midway,Carlton Cinema,3:40 PM,Regular,PG
+20-Nov-19,Midway,Carlton Cinema,6:40 PM,Regular,PG
+20-Nov-19,Last Christmas,Carlton Cinema,4:00 PM,Regular,PG
+20-Nov-19,Last Christmas,Carlton Cinema,7:00 PM,Regular,PG
+20-Nov-19,Judy,Carlton Cinema,4:05 PM,Regular,PG
+20-Nov-19,Judy,Carlton Cinema,7:05 PM,Regular,PG
+20-Nov-19,Doctor Sleep,Carlton Cinema,3:30 PM,Regular,14A
+20-Nov-19,Doctor Sleep,Carlton Cinema,6:30 PM,Regular,14A
+20-Nov-19,Charlie's Angels,Carlton Cinema,3:55 PM,Regular,PG
+20-Nov-19,Charlie's Angels,Carlton Cinema,6:55 PM,Regular,PG
+20-Nov-19,Harriet,Carlton Cinema,3:45 PM,Regular,PG
+20-Nov-19,Harriet,Carlton Cinema,6:45 PM,Regular,PG
+20-Nov-19,Terminator: Dark Fate,Carlton Cinema,3:50 PM,Regular,14A
+20-Nov-19,Terminator: Dark Fate,Carlton Cinema,6:50 PM,Regular,14A
+20-Nov-19,Playing With Fire,Carlton Cinema,7:10 PM,Regular,G
+20-Nov-19,Motherless Brooklyn,Carlton Cinema,3:35 PM,Regular,14A
+20-Nov-19,Motherless Brooklyn,Carlton Cinema,6:35 PM,Regular,14A
+20-Nov-19,The Incredible 25th Year of Mitzi Bearclaw,Carlton Cinema,4:10 PM,Regular,PG
+21-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,12:00 PM,VIP 19+,PG
+21-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,3:30 PM,VIP 19+,PG
+21-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,7:00 PM,VIP 19+,PG
+21-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,10:00 PM,VIP 19+,PG
+21-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,1:10 PM,IMAX,PG
+21-Nov-19,Charlie's Angels,Cineplex Yonge-Dundas,4:10 PM,IMAX,PG
+21-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,12:30 PM,VIP 19+,14A
+21-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,4:30 PM,VIP 19+,14A
+21-Nov-19,Doctor Sleep,Cineplex Yonge-Dundas,8:30 PM,VIP 19+,14A
+21-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,11:00 AM,VIP 19+,PG
+21-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,2:30 PM,VIP 19+,PG
+21-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,6:30 PM,VIP 19+,PG
+21-Nov-19,Ford v. Ferrari,Cineplex Yonge-Dundas,10:30 PM,VIP 19+,PG
+21-Nov-19,Frozen II,Cineplex Yonge-Dundas,6:00 PM,VIP 19+,STC
+21-Nov-19,Frozen II,Cineplex Yonge-Dundas,9:00 PM,VIP 19+,STC
+21-Nov-19,Frozen II,Cineplex Yonge-Dundas,7:00 PM,IMAX,STC
+21-Nov-19,Frozen II,Cineplex Yonge-Dundas,10:00 PM,IMAX,STC
+21-Nov-19,Frozen II,Cineplex Yonge-Dundas,6:45 PM,Regular 3D,STC
+21-Nov-19,Frozen II,Cineplex Yonge-Dundas,9:30 PM,Regular 3D,STC
+21-Nov-19,Frozen II,Cineplex Yonge-Dundas,7:30 PM,4DX 3D,STC
+21-Nov-19,Frozen II,Cineplex Yonge-Dundas,10:30 PM,4DX 3D,STC
+21-Nov-19,Joker,Cineplex Yonge-Dundas,11:30 AM,VIP 19+,14A
+21-Nov-19,Joker,Cineplex Yonge-Dundas,3:00 PM,VIP 19+,14A
+21-Nov-19,Joker,Cineplex Yonge-Dundas,1:20 PM,Ultra AVX,14A
+21-Nov-19,Joker,Cineplex Yonge-Dundas,4:30 PM,Ultra AVX,14A
+21-Nov-19,Joker,Cineplex Yonge-Dundas,7:50 PM,Ultra AVX,14A
+21-Nov-19,Joker,Cineplex Yonge-Dundas,10:40 PM,Ultra AVX,14A
+21-Nov-19,Last Christmas,Cineplex Yonge-Dundas,11:15 AM,VIP 19+,PG
+21-Nov-19,Last Christmas,Cineplex Yonge-Dundas,2:00 PM,VIP 19+,PG
+21-Nov-19,Last Christmas,Cineplex Yonge-Dundas,5:30 PM,VIP 19+,PG
+21-Nov-19,Last Christmas,Cineplex Yonge-Dundas,9:30 PM,VIP 19+,PG
+21-Nov-19,Last Christmas,Cineplex Yonge-Dundas,2:00 PM,Regular,PG
+21-Nov-19,Last Christmas,Cineplex Yonge-Dundas,4:40 PM,Regular,PG
+21-Nov-19,Last Christmas,Cineplex Yonge-Dundas,7:20 PM,Regular,PG
+21-Nov-19,Last Christmas,Cineplex Yonge-Dundas,10:00 PM,Regular,PG
+21-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,1:50 PM,Stars & Strollers,PG
+21-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,7:40 PM,Regular 3D,PG
+21-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,10:30 PM,Regular 3D,PG
+21-Nov-19,Maleficent: Mistress Of Evil,Cineplex Yonge-Dundas,4:40 PM,Regular,PG
+21-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,2:20 PM,Stars & Strollers,G
+21-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,4:50 PM,Regular,G
+21-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,7:20 PM,Regular,G
+21-Nov-19,Playing With Fire,Cineplex Yonge-Dundas,9:40 PM,Regular,G
+21-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,3:40 PM,Regular,PG
+21-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,7:00 PM,Regular,PG
+21-Nov-19,Bala (Hindi w/e.s.t),Cineplex Yonge-Dundas,10:20 PM,Regular,PG
+21-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,3:30 PM,Regular,PG
+21-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,6:30 PM,Regular,PG
+21-Nov-19,Better Days (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,9:30 PM,Regular,PG
+21-Nov-19,Black and Blue,Cineplex Yonge-Dundas,9:50 PM,Regular ,14A
+21-Nov-19,Depeche Mode: SPIRITS in the Forest,Cineplex Yonge-Dundas,7:00 PM,Regular,PG
+21-Nov-19,Depeche Mode: SPIRITS in the Forest,Cineplex Yonge-Dundas,7:00 PM,Regular,PG
+21-Nov-19,Depeche Mode: SPIRITS in the Forest,Cineplex Yonge-Dundas,9:30 PM,Regular,PG
+21-Nov-19,Harriet,Cineplex Yonge-Dundas,7:30 PM,Regular,PG
+21-Nov-19,Harriet,Cineplex Yonge-Dundas,10:40 PM,Regular,PG
+21-Nov-19,Hustlers,Cineplex Yonge-Dundas,7:00 PM,Regular,14A
+21-Nov-19,Hustlers,Cineplex Yonge-Dundas,10:00 PM,Regular,14A
+21-Nov-19,IT Chapter Two,Cineplex Yonge-Dundas,9:00 PM,Regular,14A
+21-Nov-19,Motherless Brooklyn,Cineplex Yonge-Dundas,10:30 PM,Regular,14A
+21-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,2:00 PM,Regular,PG
+21-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,4:50 PM,Regular,PG
+21-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,7:40 PM,Regular,PG
+21-Nov-19,Somewhere Winter (Mandarin w/ Chinese & English s.t.),Cineplex Yonge-Dundas,10:30 PM,Regular,PG
+21-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,3:30 PM,Regular,14A
+21-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,6:30 PM,Regular,14A
+21-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,9:30 PM,Regular,14A
+21-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,1:00 PM,4DX,14A
+21-Nov-19,Terminator: Dark Fate,Cineplex Yonge-Dundas,4:00 PM,4DX,14A
+21-Nov-19,The Addams Family,Cineplex Yonge-Dundas,7:10 PM,Regular,PG
+21-Nov-19,The Godfather: Part II - Classic Films,Cineplex Yonge-Dundas,1:45 PM,Regular,14A
+21-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,2:30 PM,Regular,PG
+21-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,5:00 PM,Regular,PG
+21-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,7:30 PM,Regular,PG
+21-Nov-19,The Warrior Queen of Jhansi,Cineplex Yonge-Dundas,10:10 PM,Regular,PG
+21-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,1:40 PM,D-Box AVX,14A
+21-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,4:40 PM,D-Box AVX,14A
+21-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,7:40 PM,D-Box AVX,14A
+21-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,10:40 PM,D-Box AVX,14A
+21-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,1:40 PM,Ultra AVX,14A
+21-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,4:40 PM,Ultra AVX,14A
+21-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,7:40 PM,Ultra AVX,14A
+21-Nov-19,Terminator: Dark Fate,Scotiabank Theatre,10:40 PM,Ultra AVX,14A
+21-Nov-19,21 Bridges,Scotiabank Theatre,7:15 PM,Regular,14A
+21-Nov-19,21 Bridges,Scotiabank Theatre,9:50 PM,Regular,14A
+21-Nov-19,A Beautiful Day In The Neighborhood,Scotiabank Theatre,4:30 PM,Regular,PG
+21-Nov-19,A Beautiful Day In The Neighborhood,Scotiabank Theatre,7:30 PM,Regular,PG
+21-Nov-19,A Beautiful Day In The Neighborhood,Scotiabank Theatre,10:20 PM,Regular,PG
+21-Nov-19,Charlie's Angels,Scotiabank Theatre,12:50 PM,Regular,PG
+21-Nov-19,Charlie's Angels,Scotiabank Theatre,1:35 PM,Regular,PG
+21-Nov-19,Charlie's Angels,Scotiabank Theatre,3:45 PM,Regular,PG
+21-Nov-19,Charlie's Angels,Scotiabank Theatre,4:30 PM,Regular,PG
+21-Nov-19,Charlie's Angels,Scotiabank Theatre,6:40 PM,Regular,PG
+21-Nov-19,Charlie's Angels,Scotiabank Theatre,7:25 PM,Regular,PG
+21-Nov-19,Charlie's Angels,Scotiabank Theatre,9:35 PM,Regular,PG
+21-Nov-19,Charlie's Angels,Scotiabank Theatre,10:20 PM,Regular,PG
+21-Nov-19,Doctor Sleep,Scotiabank Theatre,1:00 PM,Regular,14A
+21-Nov-19,Doctor Sleep,Scotiabank Theatre,2:50 PM,Regular,14A
+21-Nov-19,Doctor Sleep,Scotiabank Theatre,6:15 PM,Regular,14A
+21-Nov-19,Doctor Sleep,Scotiabank Theatre,9:30 PM,Regular,14A
+21-Nov-19,Ford v. Ferrari,Scotiabank Theatre,12:20 PM,IMAX,PG
+21-Nov-19,Ford v. Ferrari,Scotiabank Theatre,3:40 PM,IMAX,PG
+21-Nov-19,Ford v. Ferrari,Scotiabank Theatre,7:05 PM,IMAX,PG
+21-Nov-19,Ford v. Ferrari,Scotiabank Theatre,10:30 PM,IMAX,PG
+21-Nov-19,Ford v. Ferrari,Scotiabank Theatre,3:00 PM,Regular,PG
+21-Nov-19,Ford v. Ferrari,Scotiabank Theatre,6:30 PM,Regular,PG
+21-Nov-19,Ford v. Ferrari,Scotiabank Theatre,10:00 PM,Regular,PG
+21-Nov-19,Jojo Rabbit,Scotiabank Theatre,12:25 PM,Regular,PG
+21-Nov-19,Jojo Rabbit,Scotiabank Theatre,3:00 PM,Regular,PG
+21-Nov-19,Jojo Rabbit,Scotiabank Theatre,5:45 PM,Regular,PG
+21-Nov-19,Jojo Rabbit,Scotiabank Theatre,8:30 PM,Regular,PG
+21-Nov-19,Joker,Scotiabank Theatre,1:50 PM,Regular,14A
+21-Nov-19,Joker,Scotiabank Theatre,4:45 PM,Regular,14A
+21-Nov-19,Joker,Scotiabank Theatre,7:45 PM,Regular,14A
+21-Nov-19,Joker,Scotiabank Theatre,10:40 PM,Regular,14A
+21-Nov-19,Midway,Scotiabank Theatre,12:25 PM,Regular,PG
+21-Nov-19,Midway,Scotiabank Theatre,3:30 PM,Regular,PG
+21-Nov-19,Midway,Scotiabank Theatre,6:40 PM,Regular,PG
+21-Nov-19,Midway,Scotiabank Theatre,9:40 PM,Regular,PG
+21-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,12:45 PM,Regular,14A
+21-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,4:00 PM,Regular,14A
+21-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,7:20 PM,Regular,14A
+21-Nov-19,Parasite (Korean w/e.s.t),Scotiabank Theatre,10:35 PM,Regular,14A
+21-Nov-19,The Good Liar,Scotiabank Theatre,12:20 PM,Regular,14A
+21-Nov-19,The Good Liar,Scotiabank Theatre,1:20 PM,Regular,14A
+21-Nov-19,The Good Liar,Scotiabank Theatre,4:05 PM,Regular,14A
+21-Nov-19,The Good Liar,Scotiabank Theatre,6:50 PM,Regular,14A
+21-Nov-19,The Good Liar,Scotiabank Theatre,9:35 PM,Regular,14A
+21-Nov-19,The Lighthouse,Scotiabank Theatre,2:00 PM,Regular,14A
+21-Nov-19,The Lighthouse,Scotiabank Theatre,4:45 PM,Regular,14A
+21-Nov-19,The Lighthouse,Scotiabank Theatre,7:30 PM,Regular,14A
+21-Nov-19,The Lighthouse,Scotiabank Theatre,10:15 PM,Regular,14A
+21-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,1:00 PM,Regular,18A
+21-Nov-19,Zombieland 2: Double Tap,Scotiabank Theatre,3:20 PM,Regular,18A
+21-Nov-19,Midway,Carlton Cinema,3:40 PM,Regular,PG
+21-Nov-19,Last Christmas,Carlton Cinema,4:00 PM,Regular,PG
+21-Nov-19,Last Christmas,Carlton Cinema,7:00 PM,Regular,PG
+21-Nov-19,Judy,Carlton Cinema,4:05 PM,Regular,PG
+21-Nov-19,Judy,Carlton Cinema,7:05 PM,Regular,PG
+21-Nov-19,Doctor Sleep,Carlton Cinema,3:30 PM,Regular,14A
+21-Nov-19,Doctor Sleep,Carlton Cinema,6:30 PM,Regular,14A
+21-Nov-19,Charlie's Angels,Carlton Cinema,3:55 PM,Regular,PG
+21-Nov-19,Charlie's Angels,Carlton Cinema,6:55 PM,Regular,PG
+21-Nov-19,Harriet,Carlton Cinema,3:45 PM,Regular,PG
+21-Nov-19,Harriet,Carlton Cinema,6:45 PM,Regular,PG
+21-Nov-19,Terminator: Dark Fate,Carlton Cinema,3:50 PM,Regular,14A
+21-Nov-19,Terminator: Dark Fate,Carlton Cinema,6:50 PM,Regular,14A
+21-Nov-19,Playing With Fire,Carlton Cinema,7:10 PM,Regular,G
+21-Nov-19,Motherless Brooklyn,Carlton Cinema,3:35 PM,Regular,14A
+21-Nov-19,Motherless Brooklyn,Carlton Cinema,6:35 PM,Regular,14A
+21-Nov-19,The Incredible 25th Year of Mitzi Bearclaw,Carlton Cinema,4:10 PM,Regular,PG
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,11:00 AM,IMAX,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,1:45 PM,IMAX,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,4:30 PM,IMAX,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,7:15 PM,IMAX,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,10:00 PM,IMAX,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,4:00 PM,Regular 3D,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,6:45 PM,Regular 3D,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,9:30 PM,Regular 3D,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,11:30 AM,4DX 3D,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,2:15 PM,4DX 3D,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,5:00 PM,4DX 3D,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,7:45 PM,4DX 3D,STC
+22-Nov-19,Frozen II,Cineplex Yonge-Dundas,10:30 PM,4DX 3D,STC
+22-Nov-19,24 Hour Party People,Cineplex Yonge-Dundas,9:40 PM,Regular,14A
+22-Nov-19,Die Hard 2 - Flashback Film Series,Cineplex Yonge-Dundas,6:40 PM,Regular,R
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,11:00 AM,IMAX,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,1:45 PM,IMAX,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,4:30 PM,IMAX,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,7:15 PM,IMAX,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,10:00 PM,IMAX,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,10:30 AM,Regular 3D,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,1:15 PM,Regular 3D,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,4:00 PM,Regular 3D,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,6:45 PM,Regular 3D,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,9:30 PM,Regular 3D,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,11:30 AM,4DX 3D,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,2:15 PM,4DX 3D,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,5:00 PM,4DX 3D,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,7:45 PM,4DX 3D,STC
+23-Nov-19,Frozen II,Cineplex Yonge-Dundas,10:30 PM,4DX 3D,STC
+23-Nov-19,Akhnaten (Philip Glass) Mixed w/e.s.t - Metropolitan Opera,Cineplex Yonge-Dundas,12:55 PM,Regular,N/A
+23-Nov-19,DAZN x Cineplex Premier League Experience,Cineplex Yonge-Dundas,12:30 PM,Regular,N/A
+23-Nov-19,Fleabag - National Theatre Live,Cineplex Yonge-Dundas,7:00 PM,Regular,N/A
+23-Nov-19,Fleabag - National Theatre Live,Cineplex Yonge-Dundas,9:40 PM,Regular,N/A
+23-Nov-19,Akhnaten (Philip Glass) Mixed w/e.s.t - Metropolitan Opera,Scotiabank Theatre,12:55 PM,Regular,N/A
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,11:00 AM,IMAX,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,1:45 PM,IMAX,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,4:30 PM,IMAX,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,7:15 PM,IMAX,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,10:00 PM,IMAX,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,10:30 AM,Regular 3D,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,1:15 PM,Regular 3D,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,4:00 PM,Regular 3D,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,6:45 PM,Regular 3D,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,9:30 PM,Regular 3D,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,11:30 AM,4DX 3D,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,2:15 PM,4DX 3D,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,5:00 PM,4DX 3D,STC
+24-Nov-19,Frozen II,Cineplex Yonge-Dundas,10:30 PM,4DX 3D,STC
+24-Nov-19,Depeche Mode: SPIRITS in the Forest,Cineplex Yonge-Dundas,9:00 PM,Regular,PG
+24-Nov-19,Fleabag - National Theatre Live,Cineplex Yonge-Dundas,3:15 PM,Regular,N/A
+24-Nov-19,Hermitage. The Power of Art,Cineplex Yonge-Dundas,12:55 PM,Regular,N/A
+24-Nov-19,Hermitage. The Power of Art,Cineplex Yonge-Dundas,6:00 PM,Regular,N/A
