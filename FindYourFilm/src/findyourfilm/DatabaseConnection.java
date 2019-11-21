@@ -15,6 +15,8 @@ import java.io.File;
  * @author danri
  */
 public class DatabaseConnection {
+    
+    public static String[][] movieDB = new String[661][7];
     public static void main(String[] args){
         String file = "TermProject_Movie_Database.csv";
         //File f = new File("TermProject_Movie_Database.csv");
@@ -22,7 +24,7 @@ public class DatabaseConnection {
         BufferedReader br = null;
         String line = "";
         String splitOn = ",";
-        String[][] movieDB = new String[661][7];
+        //String[][] movieDB = new String[661][7];
         int rowCount =0;
         int count =0;
 
@@ -48,5 +50,18 @@ public class DatabaseConnection {
             e.printStackTrace();
         }
         System.out.println(movieDB[0][2]);
+        
+        searchDate("18-Nov-19");
+    }
+    
+    public static void searchDate(String date)
+    {
+        for (int i = 0; i < movieDB.length; i++)
+        {
+            if (movieDB[i][0].equals(date))
+            {
+                System.out.println(movieDB[i][0] + " " + movieDB[i][1] + " "+ movieDB[i][2] + " " + movieDB[i][3] + " " + movieDB[i][4] + " " + movieDB[i][5] + " ");
+            }
+        }
     }
 }
