@@ -70,6 +70,11 @@ public class MainFrame extends javax.swing.JFrame {
         childModeBtn.setText("Child Mode");
 
         viewTicketsBtn.setText("View Tickets");
+        viewTicketsBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewTicketsBtnActionPerformed(evt);
+            }
+        });
 
         welcomeLbl.setFont(new java.awt.Font("Times New Roman", 0, 36)); // NOI18N
         welcomeLbl.setText("Welcome [Customer Name]");
@@ -132,6 +137,12 @@ public class MainFrame extends javax.swing.JFrame {
         new MovieFrame().setVisible(true);
         dispose();
     }//GEN-LAST:event_quickSearchBtnActionPerformed
+
+    private void viewTicketsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewTicketsBtnActionPerformed
+        // TODO add your handling code here:
+        new ViewTicketForm().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_viewTicketsBtnActionPerformed
 
     /**
      * @param args the command line arguments
