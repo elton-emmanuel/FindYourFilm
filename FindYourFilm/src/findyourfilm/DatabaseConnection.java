@@ -18,65 +18,12 @@ public class DatabaseConnection {
     
     public static String[][] movieDB = new String[661][6];
     public DatabaseConnection(){
-        String file = "TermProject_Movie_Database.csv";
-        
-        BufferedReader br = null;
-        String line = "";
-        String splitOn = ",";
-        int rowCount =0;
-        int count = 0;
-
-        //read file into movieDB array
-        try{
-            br = new BufferedReader(new FileReader(file));
-            //System.out.println("FOUND IT");
-            while ((line = br.readLine()) != null){
-                //System.out.println(count);
-                String[] splitLine = line.split(splitOn);
-                movieDB[rowCount] = splitLine;
-                rowCount++;
-                count++;
-            }
-
-        }
-        catch(FileNotFoundException e){
-            e.printStackTrace();
-        }
-        catch(IOException e)
-        {
-            e.printStackTrace();
-        }
+        initializeDB();
     }
      public static void main(String[] args)
      {
-        String file = "TermProject_Movie_Database.csv";
-        
-        BufferedReader br = null;
-        String line = "";
-        String splitOn = ",";
-        int rowCount =0;
-        int count = 0;
+         initializeDB();
 
-        //read file into movieDB array
-        try{
-            br = new BufferedReader(new FileReader(file));
-            //System.out.println("FOUND IT");
-            while ((line = br.readLine()) != null){
-                //System.out.println(count);
-                String[] splitLine = line.split(splitOn);
-                movieDB[rowCount] = splitLine;
-                rowCount++;
-                count++;
-            }
-
-        }
-        catch(FileNotFoundException e){
-            e.printStackTrace();
-        }
-        catch(IOException e)
-        {
-            e.printStackTrace();
-        }
          //METHOD TESTING:
         searchDate("18-Nov-19", movieDB);
         searchRating("R", movieDB);
@@ -87,77 +34,26 @@ public class DatabaseConnection {
     
     public static String[][] searchDate(String date, String[][] movies)
     {
-        int arrayLength = 0;
         
-        //determine result array length
-        for (int i = 0; i < movies.length; i++)
-        {
-            if (movies[i][0].equals(date))
-            {
-                arrayLength++;
-            }
-        }
-        //initialize result array and counter
-        String[][] searchedByDate = new String[arrayLength][6];
-        int counter = 0;
-        
-        //fill result array with entries that match date passed as parameter
-        for (int i = 0; i < movies.length; i++)
-        {
-            if (movies[i][0].equals(date))
-            {
-                searchedByDate[counter][0] = movies[i][0];
-                searchedByDate[counter][1] = movies[i][1];
-                searchedByDate[counter][2] = movies[i][2];
-                searchedByDate[counter][3] = movies[i][3];
-                searchedByDate[counter][4] = movies[i][4];
-                searchedByDate[counter][5] = movies[i][5];
-                counter++;
-            }
-        }
+        String[][] searchedByDate = search(date, 0, movies);
         
         //System.out.println(searchedByDate[0][5]);
         
-        //for (int x = 0; x < searchedByDate.length; x++)
-        //{
-        //    System.out.println(searchedByDate[x][0] + searchedByDate[x][1]);
-        //}
+        //TESTING OUTPUT:
+//        for (int x = 0; x < searchedByDate.length; x++)
+//        {
+//            System.out.println(searchedByDate[x][0] + searchedByDate[x][1]);
+//        }
         
         return searchedByDate;
     }
     
     public static String[][] searchRating(String rating, String[][] movies)
     {
-        int resultLength = 0;
-        
-        //determine length of result array
-        for (int i = 0; i < movies.length; i++)
-        {
-            if (movies[i][5].equals(rating))
-            {
-                resultLength++;
-            }
-        }
-        
-        //initialize result array and counter
-        String[][] searchByRating = new String[resultLength][6];
-        int counter = 0;
-        
-        //fill result array with applicable entries
-        for (int i = 0; i < movies.length; i++)
-        {
-            if (movies[i][5].equals(rating))
-            {
-                searchByRating[counter][0] = movies[i][0];
-                searchByRating[counter][1] = movies[i][1];
-                searchByRating[counter][2] = movies[i][2];
-                searchByRating[counter][3] = movies[i][3];
-                searchByRating[counter][4] = movies[i][4];
-                searchByRating[counter][5] = movies[i][5];
-                counter++;
-            }
-        }
-        
+              
+        //initialize result array
+        String[][] searchByRating = search(rating, 5, movies);
+
         //RESULT TESTING:
         //for (int i = 0; i < searchByRating.length; i++)
         //{
@@ -169,35 +65,10 @@ public class DatabaseConnection {
 
     public static String[][] searchType(String type, String[][] movies)
     {
-        int resultLength = 0;
         
-        //determine length of result array
-        for (int i = 0; i < movies.length; i++)
-        {
-            if (movies[i][4].equals(type))
-            {
-                resultLength++;
-            }
-        }
-        
-         //initialize result array and counter
-        String[][] searchByType = new String[resultLength][6];
-        int counter = 0;
-        
-        //fill result array with applicable entries
-        for (int i = 0; i < movies.length; i++)
-        {
-            if (movies[i][4].equals(type))
-            {
-                searchByType[counter][0] = movies[i][0];
-                searchByType[counter][1] = movies[i][1];
-                searchByType[counter][2] = movies[i][2];
-                searchByType[counter][3] = movies[i][3];
-                searchByType[counter][4] = movies[i][4];
-                searchByType[counter][5] = movies[i][5];
-                counter++;
-            }
-        }
+         //initialize result array
+        String[][] searchByType = search(type, 4, movies);
+
         
         //TESTING OUTPUT
         //for (int i = 0; i < searchByType.length; i++)
@@ -240,10 +111,78 @@ public class DatabaseConnection {
             }
         }
         
-        for (int i = 0; i < movies.length; i++)
-        {
-            System.out.println(searchChildMode[i][0]+searchChildMode[i][1]+searchChildMode[i][5]);
-        }
+        //TESTING OUTPUT:
+//        for (int i = 0; i < movies.length; i++)
+//        {
+//            System.out.println(searchChildMode[i][0]+searchChildMode[i][1]+searchChildMode[i][5]);
+//        }
         return searchChildMode;
     } 
+    
+    public static String[][] search(String query, int index, String[][] movies)
+    {
+        int arrayLength = 0;
+        
+        //determine result array length
+        for (int i = 0; i < movies.length; i++)
+        {
+            if (movies[i][index].equals(query))
+            {
+                arrayLength++;
+            }
+        }
+        //initialize result array and counter
+        String[][] output = new String[arrayLength][6];
+        int counter = 0;
+        
+        //fill result array with entries that match date passed as parameter
+        for (int i = 0; i < movies.length; i++)
+        {
+            if (movies[i][index].equals(query))
+            {
+                output[counter][0] = movies[i][0];
+                output[counter][1] = movies[i][1];
+                output[counter][2] = movies[i][2];
+                output[counter][3] = movies[i][3];
+                output[counter][4] = movies[i][4];
+                output[counter][5] = movies[i][5];
+                counter++;
+            }
+        }
+        
+        return output;
+    }
+    
+    
+    public static void initializeDB()
+    {
+        String file = "TermProject_Movie_Database.csv";
+        
+        BufferedReader br = null;
+        String line = "";
+        String splitOn = ",";
+        int rowCount =0;
+        int count = 0;
+
+        //read file into movieDB array
+        try{
+            br = new BufferedReader(new FileReader(file));
+            //System.out.println("FOUND IT");
+            while ((line = br.readLine()) != null){
+                //System.out.println(count);
+                String[] splitLine = line.split(splitOn);
+                movieDB[rowCount] = splitLine;
+                rowCount++;
+                count++;
+            }
+
+        }
+        catch(FileNotFoundException e){
+            e.printStackTrace();
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
 }
