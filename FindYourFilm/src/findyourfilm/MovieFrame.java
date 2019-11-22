@@ -14,8 +14,13 @@ public class MovieFrame extends javax.swing.JFrame {
     /**
      * Creates new form java
      */
-    public MovieFrame() {
+    public Customer customer;
+    public boolean child;
+    public MovieFrame(Customer user, boolean c) {
         initComponents();
+        customer = user;
+        child = c;
+        initMovieList();
     }
 
     /**
@@ -122,7 +127,11 @@ public class MovieFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    public void initMovieList()
+    {
+        //String[][] = DatabaseConnefindMovies(child);
+        
+    }
     private void rightArrowBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rightArrowBtnActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_rightArrowBtnActionPerformed

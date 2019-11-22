@@ -6,6 +6,7 @@
 package findyourfilm;
 import java.util.logging.Logger;
 import java.awt.EventQueue;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -16,6 +17,7 @@ public class MainFrame extends javax.swing.JFrame {
     /**
      * Creates new form java
      */
+    public boolean child = false;
     public MainFrame() {
         initComponents();
       
@@ -68,6 +70,11 @@ public class MainFrame extends javax.swing.JFrame {
         });
 
         childModeBtn.setText("Child Mode");
+        childModeBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                childModeBtnActionPerformed(evt);
+            }
+        });
 
         viewTicketsBtn.setText("View Tickets");
         viewTicketsBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -143,6 +150,15 @@ public class MainFrame extends javax.swing.JFrame {
         new ViewTicketForm().setVisible(true);
         dispose();
     }//GEN-LAST:event_viewTicketsBtnActionPerformed
+
+    private void childModeBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_childModeBtnActionPerformed
+        // TODO add your handling code here:
+        child = !child;
+        if(child)
+        JOptionPane.showMessageDialog(this, "You are now in Child Mode");
+        else
+        JOptionPane.showMessageDialog(this, "You have exited Child Mode");
+    }//GEN-LAST:event_childModeBtnActionPerformed
 
     /**
      * @param args the command line arguments
