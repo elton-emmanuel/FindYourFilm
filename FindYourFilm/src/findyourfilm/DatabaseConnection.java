@@ -9,7 +9,7 @@ import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.File;
+//import java.io.File;
 /**
  *
  * @author danri
@@ -17,14 +17,14 @@ import java.io.File;
 public class DatabaseConnection {
     
     public static String[][] movieDB = new String[661][6];
-    public static void main(String[] args){
+    public DatabaseConnection(){
         String file = "TermProject_Movie_Database.csv";
         
         BufferedReader br = null;
         String line = "";
         String splitOn = ",";
         int rowCount =0;
-        int count =0;
+        int count = 0;
 
         //read file into movieDB array
         try{
@@ -46,12 +46,44 @@ public class DatabaseConnection {
         {
             e.printStackTrace();
         }
+    }
+     public static void main(String[] args)
+     {
+        String file = "TermProject_Movie_Database.csv";
         
-        //METHOD TESTING:
+        BufferedReader br = null;
+        String line = "";
+        String splitOn = ",";
+        int rowCount =0;
+        int count = 0;
+
+        //read file into movieDB array
+        try{
+            br = new BufferedReader(new FileReader(file));
+            //System.out.println("FOUND IT");
+            while ((line = br.readLine()) != null){
+                //System.out.println(count);
+                String[] splitLine = line.split(splitOn);
+                movieDB[rowCount] = splitLine;
+                rowCount++;
+                count++;
+            }
+
+        }
+        catch(FileNotFoundException e){
+            e.printStackTrace();
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+         //METHOD TESTING:
         searchDate("18-Nov-19", movieDB);
         searchRating("R", movieDB);
         searchType("IMAX", movieDB);
-    }
+        childMode(movieDB);
+     }
+        
     
     public static String[][] searchDate(String date, String[][] movies)
     {
@@ -175,4 +207,43 @@ public class DatabaseConnection {
         
         return searchByType;
     }
+    
+    public static String[][] childMode(String[][] movies)
+    {
+        int resultLength = 0;
+        
+        //determine length of result array
+        for (int i = 0; i < movies.length; i++)
+        {
+            if (!movies[i][4].equals("R"))
+            {
+                resultLength++;
+            }
+        }
+        
+         //initialize result array and counter
+        String[][] searchChildMode = new String[resultLength][6];
+        int counter = 0;
+        
+        //fill result array with applicable entries
+        for (int i = 0; i < movies.length; i++)
+        {
+            if (!movies[i][4].equals("R"))
+            {
+                searchChildMode[counter][0] = movies[i][0];
+                searchChildMode[counter][1] = movies[i][1];
+                searchChildMode[counter][2] = movies[i][2];
+                searchChildMode[counter][3] = movies[i][3];
+                searchChildMode[counter][4] = movies[i][4];
+                searchChildMode[counter][5] = movies[i][5];
+                counter++;
+            }
+        }
+        
+        for (int i = 0; i < movies.length; i++)
+        {
+            System.out.println(searchChildMode[i][0]+searchChildMode[i][1]+searchChildMode[i][5]);
+        }
+        return searchChildMode;
+    } 
 }
