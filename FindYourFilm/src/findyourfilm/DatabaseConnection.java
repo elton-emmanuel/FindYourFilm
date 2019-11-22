@@ -16,11 +16,11 @@ import java.io.IOException;
  */
 public class DatabaseConnection {
     
-    public static String[][] movieDB = new String[661][6];
+    public String[][] movieDB = new String[661][6];
     public DatabaseConnection(){
         initializeDB();
     }
-     public static void main(String[] args)
+     public void main(String[] args)
      {
          initializeDB();
 
@@ -32,7 +32,7 @@ public class DatabaseConnection {
      }
         
     
-    public static String[][] searchDate(String date, String[][] movies)
+    public String[][] searchDate(String date, String[][] movies)
     {
         
         String[][] searchedByDate = search(date, 0, movies);
@@ -48,7 +48,7 @@ public class DatabaseConnection {
         return searchedByDate;
     }
     
-    public static String[][] searchRating(String rating, String[][] movies)
+    public String[][] searchRating(String rating, String[][] movies)
     {
               
         //initialize result array
@@ -63,7 +63,7 @@ public class DatabaseConnection {
         return searchByRating;
     }
 
-    public static String[][] searchType(String type, String[][] movies)
+    public String[][] searchType(String type, String[][] movies)
     {
         
          //initialize result array
@@ -79,7 +79,7 @@ public class DatabaseConnection {
         return searchByType;
     }
     
-    public static String[][] childMode(String[][] movies)
+    public String[][] childMode(String[][] movies)
     {
         int resultLength = 0;
         
@@ -119,7 +119,7 @@ public class DatabaseConnection {
         return searchChildMode;
     } 
     
-    public static String[][] search(String query, int index, String[][] movies)
+    public String[][] search(String query, int index, String[][] movies)
     {
         int arrayLength = 0;
         
@@ -154,7 +154,7 @@ public class DatabaseConnection {
     }
     
     
-    public static void initializeDB()
+    public void initializeDB()
     {
         String file = "TermProject_Movie_Database.csv";
         
