@@ -7,7 +7,10 @@ package findyourfilm;
 
 import java.awt.event.WindowEvent;
 import java.awt.Color;
-
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import javax.swing.*;
 /**
  *
  * @author elton
@@ -33,10 +36,10 @@ public class LoginFrame extends javax.swing.JFrame {
         usernameLbl = new javax.swing.JLabel();
         usernameTxt = new javax.swing.JTextField();
         passwordLbl = new javax.swing.JLabel();
-        passwordTxt = new javax.swing.JTextField();
         loginBtn = new javax.swing.JButton();
         exitBtn = new javax.swing.JButton();
         titleLbl = new javax.swing.JLabel();
+        passwordTxt = new javax.swing.JPasswordField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 255, 255));
@@ -83,9 +86,9 @@ public class LoginFrame extends javax.swing.JFrame {
                             .addComponent(usernameLbl)
                             .addComponent(passwordLbl))
                         .addGap(42, 42, 42)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(passwordTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(usernameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 281, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(usernameTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 281, Short.MAX_VALUE)
+                            .addComponent(passwordTxt)))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(2, 2, 2)
                         .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -103,11 +106,11 @@ public class LoginFrame extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(usernameLbl)
                     .addComponent(usernameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(59, 59, 59)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGap(56, 56, 56)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(passwordLbl)
                     .addComponent(passwordTxt, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(53, 53, 53)
+                .addGap(56, 56, 56)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(exitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -115,7 +118,6 @@ public class LoginFrame extends javax.swing.JFrame {
         );
 
         usernameLbl.getAccessibleContext().setAccessibleDescription("");
-        passwordTxt.getAccessibleContext().setAccessibleName("");
 
         getAccessibleContext().setAccessibleName("usernameLbl");
 
@@ -128,14 +130,56 @@ public class LoginFrame extends javax.swing.JFrame {
 
     private void exitBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitBtnActionPerformed
         // TODO add your handling code here:
+        System.exit(0);
     }//GEN-LAST:event_exitBtnActionPerformed
 
     private void loginBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_loginBtnActionPerformed
-        Customer user = new Customer("Elton Emmanuel","Admin",null);
-        new MainFrame(user).setVisible(true);
-       dispose();
+        //get username and password from text fields
+        String username = usernameTxt.getText();
+        String password = new String(passwordTxt.getPassword());
+        
+        //boolean to check whether an account exists or not; default is false since we havent found it yet
+        boolean accountExists = false;
+        
+        //check if the user exists; otherwise throw exception
+        try {
+            //if the account does exists; create a customer object and pass it to the next frame
+            if(checkUsers(username, password, accountExists) == true) {
+                Customer user = new Customer(username, password, null);
+                new MainFrame(user).setVisible(true);
+            }
+            //otherwise, prompt the user to create an account
+            else {
+                JFrame f = new JFrame();
+                JOptionPane.showMessageDialog(f,"Account does not exist. Please create an account");
+                new CreateAccountFrame().setVisible(true);
+            }
+        } catch (IOException ex) {
+            Logger.getLogger(LoginFrame.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        dispose();
     }//GEN-LAST:event_loginBtnActionPerformed
 
+    private boolean checkUsers(String username, String password, boolean accountExists) throws IOException {
+        //read users.txt to see if the user exists
+        File file = new File("users.txt");
+        BufferedReader br = new BufferedReader(new FileReader(file));
+        String st;
+        
+        //while there are still lines to be read in the file
+        while ((st = br.readLine()) != null) {
+            //parse the file
+            String[] usernamepassword = st.split(",");
+
+            //if they eist, set flag to true
+            if (usernamepassword[0].equals(username) && usernamepassword[1].equals(password)) {
+                accountExists = true;
+            }
+        }
+        return accountExists;
+    }//end of checkUsers()
+    
     /**
      * @param args the command line arguments
      * 
@@ -154,13 +198,13 @@ public class LoginFrame extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(LoginFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
      
@@ -176,7 +220,7 @@ public class LoginFrame extends javax.swing.JFrame {
     private javax.swing.JButton exitBtn;
     private javax.swing.JButton loginBtn;
     private javax.swing.JLabel passwordLbl;
-    private javax.swing.JTextField passwordTxt;
+    private javax.swing.JPasswordField passwordTxt;
     private javax.swing.JLabel titleLbl;
     private javax.swing.JLabel usernameLbl;
     private javax.swing.JTextField usernameTxt;
