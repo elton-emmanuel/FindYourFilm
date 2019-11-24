@@ -5,6 +5,9 @@
  */
 package findyourfilm;
 
+import java.util.ArrayList;
+import javax.swing.DefaultListModel;
+
 /**
  *
  * @author elton
@@ -16,7 +19,9 @@ public class MovieFrame extends javax.swing.JFrame {
      */
     public Customer customer;
     public boolean child;
+    public DefaultListModel movieListModel;
     public MovieFrame(Customer user, boolean c) {
+        movieListModel = new DefaultListModel();
         initComponents();
         customer = user;
         child = c;
@@ -48,6 +53,7 @@ public class MovieFrame extends javax.swing.JFrame {
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        movieList = new javax.swing.JList<>(movieListModel);
         jScrollPane1.setViewportView(movieList);
 
         purchaseTicketBtn.setText("Purchase Ticket");
@@ -127,10 +133,22 @@ public class MovieFrame extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    public void initMovieList()
+    public void initMovieList(String date)
     {
-        //String[][] = DatabaseConnefindMovies(child);
+        DatabaseConnection db = new DatabaseConnection();
+        String[][] movies  = db.searchDate("date",db.movieDB);
+       
         
+        
+        //movies = db
+        for(int i =0 ;i < movies.length;i++)
+        {
+            String movie = movies[i][0] + " "+movies[i][1]+" " + movies[i][2]+ " "+ movies[i][3]+ " "+movies[i][4]+ " "+movies[i][5];
+  
+            movieListModel.addElement(movie);
+        }
+      
+       
     }
     private void rightArrowBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rightArrowBtnActionPerformed
         // TODO add your handling code here:
