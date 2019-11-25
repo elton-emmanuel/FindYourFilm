@@ -17,10 +17,9 @@ public class Ticket {
     public String theater;
     public String time;
     public String movieType;
-    public String age;
     public String rating;
-    
-    public Ticket(String d,String mn,String th,String t,String mt,String a, String r)
+   
+    public Ticket(String d,String mn,String th,String t,String mt, String r)
     
     {
        date =d;
@@ -28,7 +27,7 @@ public class Ticket {
        theater = th;
        time = t;
        movieType = mt;
-       age = a;
+  
        rating = r;
        
         

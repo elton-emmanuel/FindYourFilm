@@ -25,7 +25,20 @@ public class MovieFrame extends javax.swing.JFrame {
         initComponents();
         customer = user;
         child = c;
-        initMovieList();
+        initMovieList("18-Nov-19");
+    }
+    public MovieFrame(Customer user,String[][] movies)
+    {
+        movieListModel = new DefaultListModel();
+        initComponents();
+        customer = user;
+       for(int i =0 ;i < movies.length;i++)
+        {
+            String movie = movies[i][0] + " "+movies[i][1]+" " + movies[i][2]+ " "+ movies[i][3]+ " "+movies[i][4]+ " "+movies[i][5];
+  
+            movieListModel.addElement(movie);
+        } 
+        
     }
 
     /**
@@ -136,7 +149,7 @@ public class MovieFrame extends javax.swing.JFrame {
     public void initMovieList(String date)
     {
         DatabaseConnection db = new DatabaseConnection();
-        String[][] movies  = db.searchDate("date",db.movieDB);
+        String[][] movies  = db.searchDate(date,db.movieDB);
        
         
         

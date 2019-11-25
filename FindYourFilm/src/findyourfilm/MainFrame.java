@@ -4,8 +4,7 @@
  * and open the template in the editor.
  */
 package findyourfilm;
-import java.util.logging.Logger;
-import java.awt.EventQueue;
+
 import javax.swing.JOptionPane;
 
 /**
@@ -18,12 +17,14 @@ public class MainFrame extends javax.swing.JFrame {
      * Creates new form java
      */
     public boolean child = false;
+    public Customer customer;
     public MainFrame() {
         initComponents();
       
     }
     public MainFrame(Customer user)
     {
+        customer = user;
         initComponents();
         welcomeLbl.setText(("Welcome " + user.name));
       
@@ -137,6 +138,8 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void advSearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_advSearchBtnActionPerformed
         // TODO add your handling code here:
+        new advSearchFrame(customer).setVisible(true);
+        dispose();
     }//GEN-LAST:event_advSearchBtnActionPerformed
 
     private void quickSearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quickSearchBtnActionPerformed

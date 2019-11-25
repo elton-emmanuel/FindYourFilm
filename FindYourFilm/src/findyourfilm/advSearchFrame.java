@@ -14,10 +14,13 @@ public class advSearchFrame extends javax.swing.JFrame {
     /**
      * Creates new form advSearchFrame
      */
-    public advSearchFrame() {
+    public Customer customer;
+    public advSearchFrame(Customer user) {
+        customer = user;
         initComponents();
+       
     }
-
+  
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -31,8 +34,8 @@ public class advSearchFrame extends javax.swing.JFrame {
         theaterLbl = new javax.swing.JLabel();
         ratingLbl = new javax.swing.JLabel();
         ratingCombo = new javax.swing.JComboBox<>();
-        ageLbl = new javax.swing.JLabel();
-        ageCombo = new javax.swing.JComboBox<>();
+        typeLbl = new javax.swing.JLabel();
+        typeCombo = new javax.swing.JComboBox<>();
         searchBtn = new javax.swing.JButton();
         backBtn = new javax.swing.JButton();
 
@@ -51,9 +54,9 @@ public class advSearchFrame extends javax.swing.JFrame {
 
         ratingCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All Ratings", "PG", "14A", "G", "R", "STC", "N/A" }));
 
-        ageLbl.setText("Type:");
+        typeLbl.setText("Type:");
 
-        ageCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All Types", "VIP 19+", "IMAX", "Ultra AVX", "Regular", "Regular 3D", "4DX", "4DX 3D", "D-Box AVX", "Stars & Strollers" }));
+        typeCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All Types", "VIP 19+", "IMAX", "Ultra AVX", "Regular", "Regular 3D", "4DX", "4DX 3D", "D-Box AVX", "Stars & Strollers" }));
 
         searchBtn.setText("Search!");
         searchBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -80,12 +83,12 @@ public class advSearchFrame extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(theaterLbl)
                             .addComponent(ratingLbl)
-                            .addComponent(ageLbl))
+                            .addComponent(typeLbl))
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(theaterCombo, 0, 1, Short.MAX_VALUE)
                             .addComponent(ratingCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ageCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                            .addComponent(typeCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -106,8 +109,8 @@ public class advSearchFrame extends javax.swing.JFrame {
                     .addComponent(ratingCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(25, 25, 25)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ageLbl)
-                    .addComponent(ageCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(typeLbl)
+                    .addComponent(typeCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(24, 24, 24)
                 .addComponent(searchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -130,53 +133,32 @@ public class advSearchFrame extends javax.swing.JFrame {
 
     private void searchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchBtnActionPerformed
         // TODO add your handling code here:
-        new MovieFrame().setVisible(true);
+        DatabaseConnection db = new DatabaseConnection();
+        String[][] movies = db.movieDB;
+        if(theaterCombo.getSelectedIndex()!= 0)
+        movies = db.search((String) theaterCombo.getSelectedItem(),2, movies);
+        if(ratingCombo.getSelectedIndex()!= 0)
+        movies = db.search((String) ratingCombo.getSelectedItem(),5, movies);
+        if(typeCombo.getSelectedIndex()!= 0)
+        movies = db.search((String) typeCombo.getSelectedItem(),4, movies);
+        movies = db.searchDate("18-Nov-19",movies);
+        new MovieFrame(customer,movies).setVisible(true);
         dispose();
     }//GEN-LAST:event_searchBtnActionPerformed
 
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(advSearchFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(advSearchFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(advSearchFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(advSearchFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
-
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new advSearchFrame().setVisible(true);
-            }
-        });
-    }
+   
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JComboBox<String> ageCombo;
-    private javax.swing.JLabel ageLbl;
     private javax.swing.JButton backBtn;
     private javax.swing.JComboBox<String> ratingCombo;
     private javax.swing.JLabel ratingLbl;
     private javax.swing.JButton searchBtn;
     private javax.swing.JComboBox<String> theaterCombo;
     private javax.swing.JLabel theaterLbl;
+    private javax.swing.JComboBox<String> typeCombo;
+    private javax.swing.JLabel typeLbl;
     // End of variables declaration//GEN-END:variables
 }
