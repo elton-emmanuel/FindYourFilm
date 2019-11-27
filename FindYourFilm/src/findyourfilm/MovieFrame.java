@@ -8,6 +8,9 @@ package findyourfilm;
 import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.UIManager;
 
 /**
  *
@@ -45,7 +48,7 @@ public class MovieFrame extends javax.swing.JFrame {
        for(int i =0 ;i < daily.length;i++)
            
         {
-            String movie = daily[i][0] + "|"+daily[i][1]+"|" + daily[i][2]+ "|"+ daily[i][3]+ "|"+daily[i][4]+ "|"+daily[i][5];
+            String movie = daily[i][0] + " -- "+daily[i][1]+" -- " + daily[i][2]+ " -- "+ daily[i][3]+ " -- "+daily[i][4]+ " -- "+daily[i][5];
   
             movieListModel.addElement(movie);
         } 
@@ -90,6 +93,11 @@ public class MovieFrame extends javax.swing.JFrame {
         });
 
         viewMovieBtn.setText("View Movie Bio");
+        viewMovieBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                viewMovieBtnActionPerformed(evt);
+            }
+        });
 
         backBtn.setText("Back");
         backBtn.addActionListener(new java.awt.event.ActionListener() {
@@ -173,7 +181,7 @@ public class MovieFrame extends javax.swing.JFrame {
         //movies = db
         for(int i =0 ;i < movies.length;i++)
         {
-            String movie = movies[i][0] + "|"+movies[i][1]+"|" + movies[i][2]+ "|"+ movies[i][3]+ "|"+movies[i][4]+ "|"+movies[i][5];
+            String movie = movies[i][0] + " -- "+movies[i][1]+" -- " + movies[i][2]+ " -- "+ movies[i][3]+ " -- "+movies[i][4]+ " -- "+movies[i][5];
   
             movieListModel.addElement(movie);
         }
@@ -191,7 +199,7 @@ public class MovieFrame extends javax.swing.JFrame {
         //movies = db
         for(int i =0 ;i < movies.length;i++)
         {
-            String movie = movies[i][0] + "|"+movies[i][1]+"|" + movies[i][2]+ "|"+ movies[i][3]+ "|"+movies[i][4]+ "|"+movies[i][5];
+            String movie = movies[i][0] + " -- "+movies[i][1]+" -- " + movies[i][2]+ " -- "+ movies[i][3]+ " -- "+movies[i][4]+ " -- "+movies[i][5];
   
             movieListModel.addElement(movie);
         }
@@ -233,13 +241,44 @@ public class MovieFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         String ticketString =  movieList.getSelectedValue();
         String[] ticketSplit;
-        ticketSplit = ticketString.split("|");
+        ticketSplit = ticketString.split("--");
         Ticket ticket = new Ticket(ticketSplit[0],ticketSplit[1],ticketSplit[2],ticketSplit[3],ticketSplit[4],ticketSplit[5]);
         customer.AddTicket(ticket);
         
         
     }//GEN-LAST:event_purchaseTicketBtnActionPerformed
 
+    private void viewMovieBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewMovieBtnActionPerformed
+        // TODO add your handling code here:
+        DatabaseConnection db = new DatabaseConnection();
+        String ticketString =  movieList.getSelectedValue();
+        String[] ticketSplit = ticketString.split(" -- ");
+        JFrame f= new JFrame();
+         
+//        UIManager UI = new UIManager();
+//        UI.put("OptionPane.background", Color.white);
+//        UI.put("Panel.background", Color.white);
+//        UI.put("Label.background", Color.white);
+//        UIManager.getLookAndFeelDefaults().put("Panel.background", Color.white);
+        
+        String bio = db.findBio(ticketSplit[1]);
+        bio = breakString(bio, 75);
+        JOptionPane.showMessageDialog(f,bio);
+//        JOptionPane.showMessageDialog(null,bio,"white",JOptionPane.INFORMATION_MESSAGE);
+
+        
+    }//GEN-LAST:event_viewMovieBtnActionPerformed
+
+    public static String breakString(String str, int size)
+{
+    StringBuilder work = new StringBuilder(str);
+    int pos = 0;
+    while ((pos = work.indexOf(" ", pos + size)) >= 0)
+    {
+        work.setCharAt(pos, '\n');
+    }
+    return work.toString();
+}
     /**
      * @param args the command line arguments
      */

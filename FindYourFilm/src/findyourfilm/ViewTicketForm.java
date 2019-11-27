@@ -44,8 +44,6 @@ public class ViewTicketForm extends javax.swing.JFrame {
 
         selectLbl.setText("Select Ticket:");
 
-        ticketCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-
         viewBtn.setText("View");
         viewBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,7 +95,7 @@ public class ViewTicketForm extends javax.swing.JFrame {
     private void viewBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewBtnActionPerformed
         // TODO add your handling code here:
         
-        new TicketInfo(customer.ticketList.get(ticketCombo.getSelectedIndex())).setVisible(true);
+        new TicketInfo(customer,customer.ticketList.get(ticketCombo.getSelectedIndex())).setVisible(true);
         dispose();
     }//GEN-LAST:event_viewBtnActionPerformed
 

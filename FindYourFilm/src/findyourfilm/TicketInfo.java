@@ -14,13 +14,16 @@ public class TicketInfo extends javax.swing.JFrame {
     /**
      * Creates new form TicketInfo
      */
+    public Customer customer;
+    
     public TicketInfo() {
         initComponents();
     }
-    public TicketInfo(Ticket ticket)
+    public TicketInfo(Customer user,Ticket ticket)
     {
+        customer = user;
         initComponents();
-        ageTxt.setText(ticket.age);
+        
         dateTxt.setText(ticket.date);
         movieNameTxt.setText(ticket.movieName);
         typeTxt.setText(ticket.movieType);
@@ -45,14 +48,12 @@ public class TicketInfo extends javax.swing.JFrame {
         theaterLbl = new javax.swing.JLabel();
         timeLbl = new javax.swing.JLabel();
         movieTypeLbl = new javax.swing.JLabel();
-        ageLbl = new javax.swing.JLabel();
         ratingLbl = new javax.swing.JLabel();
         dateTxt = new javax.swing.JLabel();
         movieNameTxt = new javax.swing.JLabel();
         theaterTxt = new javax.swing.JLabel();
         timeTxt = new javax.swing.JLabel();
         typeTxt = new javax.swing.JLabel();
-        ageTxt = new javax.swing.JLabel();
         ratingTxt = new javax.swing.JLabel();
         backBtn = new javax.swing.JButton();
         barcodeBtn = new javax.swing.JButton();
@@ -69,8 +70,6 @@ public class TicketInfo extends javax.swing.JFrame {
 
         movieTypeLbl.setText("Movie Type:");
 
-        ageLbl.setText("Age:");
-
         ratingLbl.setText("Rating:");
 
         dateTxt.setText("[Movie Date]");
@@ -82,8 +81,6 @@ public class TicketInfo extends javax.swing.JFrame {
         timeTxt.setText("[Movie Time]");
 
         typeTxt.setText("[Movie Type]");
-
-        ageTxt.setText("[Movie Age]");
 
         ratingTxt.setText("[Movie Rating]");
 
@@ -125,13 +122,9 @@ public class TicketInfo extends javax.swing.JFrame {
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
                         .addGap(36, 36, 36)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ratingLbl)
-                            .addComponent(ageLbl, javax.swing.GroupLayout.Alignment.TRAILING))
+                        .addComponent(ratingLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ratingTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(ageTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(ratingTxt, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGap(0, 12, Short.MAX_VALUE)
@@ -156,7 +149,7 @@ public class TicketInfo extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(movieNameTxt, javax.swing.GroupLayout.DEFAULT_SIZE, 15, Short.MAX_VALUE)
+                        .addComponent(movieNameTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 15, Short.MAX_VALUE)
                         .addGap(14, 14, 14))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(movieNameLbl)
@@ -172,11 +165,7 @@ public class TicketInfo extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(typeTxt)
                     .addComponent(movieTypeLbl))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ageLbl)
-                    .addComponent(ageTxt))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(ratingLbl)
                     .addComponent(ratingTxt))
@@ -192,7 +181,7 @@ public class TicketInfo extends javax.swing.JFrame {
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // TODO add your handling code here:
-        new ViewTicketForm().setVisible(true);
+        new ViewTicketForm(customer).setVisible(true);
         
         dispose();
     }//GEN-LAST:event_backBtnActionPerformed
@@ -200,41 +189,9 @@ public class TicketInfo extends javax.swing.JFrame {
     /**
      * @param args the command line arguments
      */
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(TicketInfo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(TicketInfo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(TicketInfo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(TicketInfo.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new TicketInfo().setVisible(true);
-            }
-        });
-    }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel ageLbl;
-    private javax.swing.JLabel ageTxt;
     private javax.swing.JButton backBtn;
     private javax.swing.JButton barcodeBtn;
     private javax.swing.JLabel dateLbl;

@@ -17,18 +17,22 @@ import java.io.IOException;
 public class DatabaseConnection {
     
     public String[][] movieDB = new String[661][6];
+    public String[][] bioDB = new String[42][2];
     public DatabaseConnection(){
         initializeDB();
+        initializeMB();
+        System.out.println(findBio("Charlie's Angels"));
     }
      public void main(String[] args)
      {
          initializeDB();
-
+         initializeMB();
          //METHOD TESTING:
         searchDate("18-Nov-19", movieDB);
         searchRating("R", movieDB);
         searchType("IMAX", movieDB);
         childMode(movieDB);
+        
      }
         
     
@@ -153,6 +157,18 @@ public class DatabaseConnection {
         return output;
     }
     
+    public String findBio(String movieName)
+    {
+        for (int i = 0; i < bioDB.length; i++)
+        {
+            if (bioDB[i][0].equals(movieName))
+            {
+                return bioDB[i][1];
+            }
+        }
+        return "No Bio Available";
+    }
+    
     
     public void initializeDB()
     {
@@ -172,6 +188,38 @@ public class DatabaseConnection {
                 //System.out.println(count);
                 String[] splitLine = line.split(splitOn);
                 movieDB[rowCount] = splitLine;
+                rowCount++;
+                count++;
+            }
+
+        }
+        catch(FileNotFoundException e){
+            e.printStackTrace();
+        }
+        catch(IOException e)
+        {
+            e.printStackTrace();
+        }
+    }
+    
+    public void initializeMB()
+    {
+        String file = "Movie_Bio.txt";
+        
+        BufferedReader br = null;
+        String line = "";
+        String splitOn = "	";
+        int rowCount =0;
+        int count = 0;
+
+        //read file into movieDB array
+        try{
+            br = new BufferedReader(new FileReader(file));
+            //System.out.println("FOUND IT");
+            while ((line = br.readLine()) != null){
+                //System.out.println(count);
+                String[] splitLine = line.split(splitOn);
+                bioDB[rowCount] = splitLine;
                 rowCount++;
                 count++;
             }

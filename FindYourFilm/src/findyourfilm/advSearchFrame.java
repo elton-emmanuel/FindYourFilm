@@ -127,7 +127,7 @@ public class advSearchFrame extends javax.swing.JFrame {
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // TODO add your handling code here:
-        new MainFrame().setVisible(true);
+        new MainFrame(customer).setVisible(true);
         dispose();
     }//GEN-LAST:event_backBtnActionPerformed
 

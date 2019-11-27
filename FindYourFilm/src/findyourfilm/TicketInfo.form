@@ -56,15 +56,9 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="36" pref="36" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ratingLbl" min="-2" max="-2" attributes="0"/>
-                          <Component id="ageLbl" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="ratingLbl" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="ratingTxt" max="32767" attributes="0"/>
-                          <Component id="ageTxt" min="-2" pref="153" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="ratingTxt" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
@@ -120,12 +114,7 @@
                   <Component id="typeTxt" min="-2" max="-2" attributes="0"/>
                   <Component id="movieTypeLbl" alignment="0" min="-2" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="ageLbl" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="ageTxt" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="ratingLbl" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="ratingTxt" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -166,11 +155,6 @@
         <Property name="text" type="java.lang.String" value="Movie Type:"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="ageLbl">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Age:"/>
-      </Properties>
-    </Component>
     <Component class="javax.swing.JLabel" name="ratingLbl">
       <Properties>
         <Property name="text" type="java.lang.String" value="Rating:"/>
@@ -199,11 +183,6 @@
     <Component class="javax.swing.JLabel" name="typeTxt">
       <Properties>
         <Property name="text" type="java.lang.String" value="[Movie Type]"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="ageTxt">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="[Movie Age]"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="ratingTxt">
