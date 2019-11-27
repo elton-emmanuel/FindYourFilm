@@ -27,19 +27,24 @@ public class MovieFrame extends javax.swing.JFrame {
         initComponents();
         customer = user;
         child = c;
-        initMovieList("18-Nov-19");
+        currentDate ="18-Nov-19";
+        dateLbl.setText(currentDate);
+        initMovieList(currentDate);
+        
     }
     public MovieFrame(Customer user,String[][] movies)
     { DatabaseConnection db = new DatabaseConnection();
-       
+       origin = movies;
         movieListModel = new DefaultListModel();
         initComponents();
         customer = user;
-        String[][] daily = db.searchDate("18-Nov-19", movies);
-       for(int i =0 ;i < movies.length;i++)
+        currentDate ="18-Nov-19";
+        dateLbl.setText(currentDate);
+        String[][] daily = db.searchDate(currentDate, movies);
+       for(int i =0 ;i < daily.length;i++)
            
         {
-            String movie = movies[i][0] + " "+movies[i][1]+" " + movies[i][2]+ " "+ movies[i][3]+ " "+movies[i][4]+ " "+movies[i][5];
+            String movie = daily[i][0] + "|"+daily[i][1]+"|" + daily[i][2]+ "|"+ daily[i][3]+ "|"+daily[i][4]+ "|"+daily[i][5];
   
             movieListModel.addElement(movie);
         } 
@@ -75,6 +80,11 @@ public class MovieFrame extends javax.swing.JFrame {
         jScrollPane1.setViewportView(movieList);
 
         purchaseTicketBtn.setText("Purchase Ticket");
+        purchaseTicketBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                purchaseTicketBtnActionPerformed(evt);
+            }
+        });
 
         viewMovieBtn.setText("View Movie Bio");
 
@@ -154,6 +164,7 @@ public class MovieFrame extends javax.swing.JFrame {
     public void initMovieList(String date)
     {
         DatabaseConnection db = new DatabaseConnection();
+        origin = db.movieDB;
         String[][] movies  = db.searchDate(date,db.movieDB);
        
         
@@ -161,19 +172,52 @@ public class MovieFrame extends javax.swing.JFrame {
         //movies = db
         for(int i =0 ;i < movies.length;i++)
         {
-            String movie = movies[i][0] + " "+movies[i][1]+" " + movies[i][2]+ " "+ movies[i][3]+ " "+movies[i][4]+ " "+movies[i][5];
+            String movie = movies[i][0] + "|"+movies[i][1]+"|" + movies[i][2]+ "|"+ movies[i][3]+ "|"+movies[i][4]+ "|"+movies[i][5];
   
             movieListModel.addElement(movie);
         }
       
        
     }
+    public void refreshList()
+    {
+        movieListModel.clear();
+         DatabaseConnection db = new DatabaseConnection();
+          String[][] movies  = db.searchDate(currentDate,origin);
+       
+        
+        
+        //movies = db
+        for(int i =0 ;i < movies.length;i++)
+        {
+            String movie = movies[i][0] + "|"+movies[i][1]+"|" + movies[i][2]+ "|"+ movies[i][3]+ "|"+movies[i][4]+ "|"+movies[i][5];
+  
+            movieListModel.addElement(movie);
+        }
+        
+    }
     private void rightArrowBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rightArrowBtnActionPerformed
         // TODO add your handling code here:
+        String dayS = currentDate.substring(0, 2);
+        int dayI= Integer.parseInt(dayS);
+        dayI++;
+        currentDate = dayI+currentDate.substring(2);
+        dateLbl.setText(currentDate);
+        refreshList();
+        
+        
+        
     }//GEN-LAST:event_rightArrowBtnActionPerformed
 
     private void leftArrowBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_leftArrowBtnActionPerformed
         // TODO add your handling code here:
+         String dayS = currentDate.substring(0, 2);
+        int dayI= Integer.parseInt(dayS);
+        dayI--;
+        currentDate = dayI+currentDate.substring(2);
+        dateLbl.setText(currentDate);
+        refreshList();
+        
     }//GEN-LAST:event_leftArrowBtnActionPerformed
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
@@ -181,6 +225,17 @@ public class MovieFrame extends javax.swing.JFrame {
         new MainFrame().setVisible(true);
         dispose();
     }//GEN-LAST:event_backBtnActionPerformed
+
+    private void purchaseTicketBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_purchaseTicketBtnActionPerformed
+        // TODO add your handling code here:
+        String ticketString =  movieList.getSelectedValue();
+        String[] ticketSplit;
+        ticketSplit = ticketString.split("|");
+        Ticket ticket = new Ticket(ticketSplit[0],ticketSplit[1],ticketSplit[2],ticketSplit[3],ticketSplit[4],ticketSplit[5]);
+        customer.AddTicket(ticket);
+        
+        
+    }//GEN-LAST:event_purchaseTicketBtnActionPerformed
 
     /**
      * @param args the command line arguments

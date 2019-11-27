@@ -144,7 +144,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void quickSearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quickSearchBtnActionPerformed
         // TODO add your handling code here:
-        new MovieFrame(null,child).setVisible(true);
+        new MovieFrame(customer,child).setVisible(true);
         dispose();
     }//GEN-LAST:event_quickSearchBtnActionPerformed
 

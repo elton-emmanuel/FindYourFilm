@@ -27,7 +27,6 @@ public class Ticket {
        theater = th;
        time = t;
        movieType = mt;
-  
        rating = r;
        
         

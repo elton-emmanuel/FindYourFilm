@@ -23,5 +23,15 @@ public class Customer {
         type = t;
         ticketList = list;
     }
+    public void AddTicket(Ticket ticket)
+    {
+        if(ticketList== null)
+            ticketList = new ArrayList<>();
+                    
+        ticketList.add(ticket);
+      
+        
+    }
+    
     
 }
