@@ -20,6 +20,8 @@ public class MovieFrame extends javax.swing.JFrame {
     public Customer customer;
     public boolean child;
     public DefaultListModel movieListModel;
+    public String currentDate;
+    public String[][] origin;
     public MovieFrame(Customer user, boolean c) {
         movieListModel = new DefaultListModel();
         initComponents();
@@ -28,11 +30,14 @@ public class MovieFrame extends javax.swing.JFrame {
         initMovieList("18-Nov-19");
     }
     public MovieFrame(Customer user,String[][] movies)
-    {
+    { DatabaseConnection db = new DatabaseConnection();
+       
         movieListModel = new DefaultListModel();
         initComponents();
         customer = user;
+        String[][] daily = db.searchDate("18-Nov-19", movies);
        for(int i =0 ;i < movies.length;i++)
+           
         {
             String movie = movies[i][0] + " "+movies[i][1]+" " + movies[i][2]+ " "+ movies[i][3]+ " "+movies[i][4]+ " "+movies[i][5];
   

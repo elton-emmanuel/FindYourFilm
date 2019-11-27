@@ -141,7 +141,6 @@ public class advSearchFrame extends javax.swing.JFrame {
         movies = db.search((String) ratingCombo.getSelectedItem(),5, movies);
         if(typeCombo.getSelectedIndex()!= 0)
         movies = db.search((String) typeCombo.getSelectedItem(),4, movies);
-        movies = db.searchDate("18-Nov-19",movies);
         new MovieFrame(customer,movies).setVisible(true);
         dispose();
     }//GEN-LAST:event_searchBtnActionPerformed
