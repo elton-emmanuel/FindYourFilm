@@ -18,9 +18,9 @@ public class ViewTicketForm extends javax.swing.JFrame {
     public ViewTicketForm(Customer user) {
         customer = user;
         initComponents();
-        for(int i = 0; i<user.ticketList.size();i++)
+        for(int i = 0; i<customer .ticketList.size();i++)
         {
-            ticketCombo.addItem(user.ticketList.get(i).movieName);
+            ticketCombo.addItem(customer.ticketList.get(i).movieName);
             
             
         }
@@ -103,7 +103,7 @@ public class ViewTicketForm extends javax.swing.JFrame {
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // TODO add your handling code here:
-        new MainFrame().setVisible(true);
+        new MainFrame(customer).setVisible(true);
         dispose();
     }//GEN-LAST:event_backBtnActionPerformed
 

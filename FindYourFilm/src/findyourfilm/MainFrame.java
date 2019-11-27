@@ -157,7 +157,7 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void viewTicketsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewTicketsBtnActionPerformed
         // TODO add your handling code here:
-        ViewTicketForm ticketForm = new ViewTicketForm();
+        ViewTicketForm ticketForm = new ViewTicketForm(customer);
         ticketForm.getContentPane().setBackground(Color.white);
         ticketForm.setVisible(true);
         dispose();

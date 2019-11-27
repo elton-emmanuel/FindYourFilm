@@ -22,6 +22,8 @@ public class Customer {
         name = n;
         type = t;
         ticketList = list;
+         if(ticketList== null)
+            ticketList = new ArrayList<>();
     }
     public void AddTicket(Ticket ticket)
     {

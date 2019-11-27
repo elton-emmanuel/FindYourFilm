@@ -5,6 +5,7 @@
  */
 package findyourfilm;
 
+import java.awt.Color;
 import java.util.ArrayList;
 import javax.swing.DefaultListModel;
 
@@ -221,7 +222,7 @@ public class MovieFrame extends javax.swing.JFrame {
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // TODO add your handling code here:
-        MainFrame MFrame = new MainFrame();
+        MainFrame MFrame = new MainFrame(customer);
         MFrame.getContentPane().setBackground(Color.white);
         MFrame.setVisible(true);
         dispose();
