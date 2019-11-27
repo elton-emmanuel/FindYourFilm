@@ -166,7 +166,8 @@ public class MovieFrame extends javax.swing.JFrame {
         DatabaseConnection db = new DatabaseConnection();
         origin = db.movieDB;
         String[][] movies  = db.searchDate(date,db.movieDB);
-       
+        if(child)
+        movies = db.childMode(movies);
         
         
         //movies = db

@@ -99,7 +99,7 @@ public class DatabaseConnection {
         //fill result array with applicable entries
         for (int i = 0; i < movies.length; i++)
         {
-            if (!movies[i][4].equals("R"))
+            if (!movies[i][5].equals("R"))
             {
                 searchChildMode[counter][0] = movies[i][0];
                 searchChildMode[counter][1] = movies[i][1];
