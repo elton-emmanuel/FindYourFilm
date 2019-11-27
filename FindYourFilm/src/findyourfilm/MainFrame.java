@@ -6,6 +6,7 @@
 package findyourfilm;
 
 import javax.swing.JOptionPane;
+import java.awt.Color;
 
 /**
  *
@@ -119,13 +120,13 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(quickSearchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(advSearchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(viewTicketsBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(childModeBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(logoutBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 57, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(311, Short.MAX_VALUE))
+                .addContainerGap(305, Short.MAX_VALUE))
         );
 
         pack();
@@ -140,19 +141,25 @@ public class MainFrame extends javax.swing.JFrame {
 
     private void advSearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_advSearchBtnActionPerformed
         // TODO add your handling code here:
-        new advSearchFrame(customer).setVisible(true);
+        advSearchFrame advFrame = new advSearchFrame(customer);
+        advFrame.getContentPane().setBackground(Color.white);
+        advFrame.setVisible(true);
         dispose();
     }//GEN-LAST:event_advSearchBtnActionPerformed
 
     private void quickSearchBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quickSearchBtnActionPerformed
         // TODO add your handling code here:
-        new MovieFrame(customer,child).setVisible(true);
+        MovieFrame MFrame = new MovieFrame(customer,child);
+        MFrame.getContentPane().setBackground(Color.white);
+        MFrame.setVisible(true);
         dispose();
     }//GEN-LAST:event_quickSearchBtnActionPerformed
 
     private void viewTicketsBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewTicketsBtnActionPerformed
         // TODO add your handling code here:
-        new ViewTicketForm().setVisible(true);
+        ViewTicketForm ticketForm = new ViewTicketForm();
+        ticketForm.getContentPane().setBackground(Color.white);
+        ticketForm.setVisible(true);
         dispose();
     }//GEN-LAST:event_viewTicketsBtnActionPerformed
 
