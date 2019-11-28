@@ -5,6 +5,7 @@
  */
 package findyourfilm;
 import java.io.*;
+import java.awt.Color;
 /**
  *
  * @author Joseph
@@ -116,6 +117,7 @@ public class CreateAccountFrame extends javax.swing.JFrame {
         createAccount(username, password);
 
         LoginFrame frame = new LoginFrame();
+        frame.getContentPane().setBackground(Color.white);
         frame.setVisible(true);
         
         dispose();
