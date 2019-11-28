@@ -76,7 +76,7 @@ public class LoginFrame extends javax.swing.JFrame {
 
         titleLbl.setFont(new java.awt.Font("Yu Gothic UI", 1, 48)); // NOI18N
         titleLbl.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        titleLbl.setText("FindYourFilm");
+        titleLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/findyourfilm/FindYourFilm.png"))); // NOI18N
 
         imgLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/findyourfilm/Login_Film_Clipart.png"))); // NOI18N
         imgLbl.setText("jLabel1");
@@ -104,7 +104,7 @@ public class LoginFrame extends javax.swing.JFrame {
                         .addComponent(loginBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(exitBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(122, Short.MAX_VALUE))
+                .addContainerGap(60, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
