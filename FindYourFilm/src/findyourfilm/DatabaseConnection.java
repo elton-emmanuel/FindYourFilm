@@ -21,7 +21,7 @@ public class DatabaseConnection {
     public DatabaseConnection(){
         initializeDB();
         initializeMB();
-        System.out.println(findBio("Charlie's Angels"));
+        //System.out.println(findBio("Charlie's Angels"));
     }
      public void main(String[] args)
      {

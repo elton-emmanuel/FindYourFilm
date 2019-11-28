@@ -5,6 +5,8 @@
  */
 package findyourfilm;
 
+import java.awt.Color;
+
 /**
  *
  * @author User
@@ -39,8 +41,11 @@ public class ViewTicketForm extends javax.swing.JFrame {
         ticketCombo = new javax.swing.JComboBox<>();
         viewBtn = new javax.swing.JButton();
         backBtn = new javax.swing.JButton();
+        ticketLogoLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(550, 150));
+        setResizable(false);
 
         selectLbl.setText("Select Ticket:");
 
@@ -58,35 +63,46 @@ public class ViewTicketForm extends javax.swing.JFrame {
             }
         });
 
+        ticketLogoLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/findyourfilm/tickets.png"))); // NOI18N
+        ticketLogoLbl.setText("jLabel1");
+        ticketLogoLbl.setPreferredSize(new java.awt.Dimension(123, 100));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(42, 42, 42)
+                .addGap(30, 30, 30)
+                .addComponent(ticketLogoLbl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 100, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(selectLbl)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(ticketCombo, javax.swing.GroupLayout.PREFERRED_SIZE, 163, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(viewBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(viewBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(36, 36, 36)
-                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(44, Short.MAX_VALUE))
+                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(38, 38, 38))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(selectLbl)
-                    .addComponent(ticketCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(viewBtn, javax.swing.GroupLayout.DEFAULT_SIZE, 40, Short.MAX_VALUE)
-                    .addComponent(backBtn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addGroup(layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(selectLbl)
+                            .addComponent(ticketCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(viewBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
+                        .addComponent(ticketLogoLbl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(80, Short.MAX_VALUE))
         );
 
         pack();
@@ -94,14 +110,17 @@ public class ViewTicketForm extends javax.swing.JFrame {
 
     private void viewBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_viewBtnActionPerformed
         // TODO add your handling code here:
-        
-        new TicketInfo(customer,customer.ticketList.get(ticketCombo.getSelectedIndex())).setVisible(true);
+        TicketInfo tInfo = new TicketInfo(customer, customer.ticketList.get(ticketCombo.getSelectedIndex()));
+        tInfo.getContentPane().setBackground(Color.white);
+        tInfo.setVisible(true);
         dispose();
     }//GEN-LAST:event_viewBtnActionPerformed
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // TODO add your handling code here:
-        new MainFrame(customer).setVisible(true);
+        MainFrame frame = new MainFrame(customer);
+        frame.getContentPane().setBackground(Color.white);
+        frame.setVisible(true);
         dispose();
     }//GEN-LAST:event_backBtnActionPerformed
 
@@ -113,6 +132,7 @@ public class ViewTicketForm extends javax.swing.JFrame {
     private javax.swing.JButton backBtn;
     private javax.swing.JLabel selectLbl;
     private javax.swing.JComboBox<String> ticketCombo;
+    private javax.swing.JLabel ticketLogoLbl;
     private javax.swing.JButton viewBtn;
     // End of variables declaration//GEN-END:variables
 }

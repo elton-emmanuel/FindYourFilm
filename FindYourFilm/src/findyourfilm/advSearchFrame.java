@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package findyourfilm;
-
+import java.awt.Color;
+import javax.swing.ImageIcon;
 /**
  *
  * @author User
@@ -18,6 +19,7 @@ public class advSearchFrame extends javax.swing.JFrame {
     public advSearchFrame(Customer user) {
         customer = user;
         initComponents();
+        //ImageIcon image = new ImageIcon("Movie_Film_Stars.gif");
        
     }
   
@@ -38,8 +40,11 @@ public class advSearchFrame extends javax.swing.JFrame {
         typeCombo = new javax.swing.JComboBox<>();
         searchBtn = new javax.swing.JButton();
         backBtn = new javax.swing.JButton();
+        iconLbl = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setPreferredSize(new java.awt.Dimension(550, 321));
+        setResizable(false);
 
         theaterCombo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "All Theatres", "Cineplex Yonge-Dundas", "Scotiabank Theatre", "Carlton Cinema" }));
         theaterCombo.addActionListener(new java.awt.event.ActionListener() {
@@ -72,13 +77,19 @@ public class advSearchFrame extends javax.swing.JFrame {
             }
         });
 
+        iconLbl.setIcon(new javax.swing.ImageIcon(getClass().getResource("/findyourfilm/Movie_Film_Stars.gif"))); // NOI18N
+        iconLbl.setText("jLabel1");
+        iconLbl.setPreferredSize(new java.awt.Dimension(175, 175));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(51, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGap(66, 66, 66)
+                .addComponent(iconLbl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 253, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(theaterLbl)
@@ -89,7 +100,7 @@ public class advSearchFrame extends javax.swing.JFrame {
                             .addComponent(theaterCombo, 0, 1, Short.MAX_VALUE)
                             .addComponent(ratingCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(typeCombo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                    .addGroup(layout.createSequentialGroup()
                         .addGap(38, 38, 38)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -99,23 +110,28 @@ public class advSearchFrame extends javax.swing.JFrame {
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(44, 44, 44)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(theaterCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(theaterLbl))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ratingLbl)
-                    .addComponent(ratingCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(typeLbl)
-                    .addComponent(typeCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(24, 24, 24)
-                .addComponent(searchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(27, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(44, 44, 44)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(theaterCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(theaterLbl))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(ratingLbl)
+                            .addComponent(ratingCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(typeLbl)
+                            .addComponent(typeCombo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addComponent(searchBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(backBtn, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(66, 66, 66)
+                        .addComponent(iconLbl, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(177, Short.MAX_VALUE))
         );
 
         pack();
@@ -127,7 +143,9 @@ public class advSearchFrame extends javax.swing.JFrame {
 
     private void backBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backBtnActionPerformed
         // TODO add your handling code here:
-        new MainFrame(customer).setVisible(true);
+        MainFrame frame = new MainFrame(customer);
+        frame.getContentPane().setBackground(Color.white);
+        frame.setVisible(true);
         dispose();
     }//GEN-LAST:event_backBtnActionPerformed
 
@@ -141,7 +159,10 @@ public class advSearchFrame extends javax.swing.JFrame {
         movies = db.search((String) ratingCombo.getSelectedItem(),5, movies);
         if(typeCombo.getSelectedIndex()!= 0)
         movies = db.search((String) typeCombo.getSelectedItem(),4, movies);
-        new MovieFrame(customer,movies).setVisible(true);
+        
+        MovieFrame MFrame = new MovieFrame(customer, movies);
+        MFrame.getContentPane().setBackground(Color.white);
+        MFrame.setVisible(true);
         dispose();
     }//GEN-LAST:event_searchBtnActionPerformed
 
@@ -152,6 +173,7 @@ public class advSearchFrame extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton backBtn;
+    private javax.swing.JLabel iconLbl;
     private javax.swing.JComboBox<String> ratingCombo;
     private javax.swing.JLabel ratingLbl;
     private javax.swing.JButton searchBtn;

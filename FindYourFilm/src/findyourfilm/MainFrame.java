@@ -74,7 +74,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        childModeBtn.setText("Child Mode");
+        childModeBtn.setText("Child Mode: OFF");
         childModeBtn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 childModeBtnActionPerformed(evt);
@@ -167,9 +167,16 @@ public class MainFrame extends javax.swing.JFrame {
         // TODO add your handling code here:
         child = !child;
         if(child)
-        JOptionPane.showMessageDialog(this, "You are now in Child Mode");
+        {
+           JOptionPane.showMessageDialog(this, "You are now in Child Mode");
+            childModeBtn.setText("Child Mode: ON"); 
+        } 
         else
-        JOptionPane.showMessageDialog(this, "You have exited Child Mode");
+        {
+            JOptionPane.showMessageDialog(this, "You have exited Child Mode");
+            childModeBtn.setText("Child Mode: OFF");
+        }
+            
     }//GEN-LAST:event_childModeBtnActionPerformed
 
     /**
